@@ -46,11 +46,11 @@
 					},
 					{
 						"pre": "Hammer",
-						"desc": ""
+						"desc": "For nails. Also skulls."
 					},
 					{
 						"pre": "Flail",
-						"desc": ""
+						"desc": "The ol' ball-and-chain. And spikes."
 					},
 					{
 						"pre": "Long Bow",
@@ -98,7 +98,7 @@
 					{
 						"pre": "Deadly",
 						"desc": "Has a tendency to kill whatever ends up in front of it.",
-						"post": ""
+						"post": "of the Assassin"
 					},
 					{
 						"pre": "Durable",
@@ -106,14 +106,9 @@
 						"post": "of Endurance"
 					},
 					{
-						"pre": "Clear-cut",
-						"desc": "So easy to use a baby could wield it.",
-						"post": ""
-					},
-					{
 						"pre": "Elegant",
 						"desc": "You're going to fight, and look good doing it.",
-						"post": ""
+						"post": "of Luxury"
 					},
 					{
 						"pre": "Erratic",
@@ -132,13 +127,13 @@
 					},
 					{
 						"pre": "Heavy",
-						"desc": "",
-						"post": ""
+						"desc": "Takes incredible strength to wield",
+						"post": "of Burden"
 					},
 					{
 						"pre": "Huge",
-						"desc": "",
-						"post": "of Burden"
+						"desc": "Takes up a ton of space. Good lucky moving it.",
+						"post": "of the Hulk"
 					},
 					{
 						"pre": "Everlasting",
@@ -166,9 +161,9 @@
 						"post": "of the Chorus"
 					},
 					{
-						"pre": "Crude",
+						"pre": "Homemade",
 						"desc": "The most bare-bones implementation of this weapon.",
-						"post": ""
+						"post": "of the Amateur"
 					},
 					{
 						"pre": "Military",
@@ -182,28 +177,23 @@
 					},
 					{
 						"pre": "Powerful",
-						"desc": "",
+						"desc": "Incredible impact when an attack connects.",
 						"post": "of the Tyrant"
 					},
 					{
 						"pre": "Ragged",
 						"desc": "Still technically useable, but it's falling apart.",
-						"post": ""
+						"post": "of the Peasant"
 					},
 					{
 						"pre": "Rare",
 						"desc": "I can't believe you found one of these.",
-						"post": ""
-					},
-					{
-						"pre": "Unblockable",
-						"desc": "No shield can stop it.",
-						"post": ""
+						"post": "of Marvel"
 					},
 					{
 						"pre": "Unreliable",
 						"desc": "Does what you want it to do. Sometimes anyway.",
-						"post": ""
+						"post": "of the Trickster"
 					},
 					{
 						"pre": "Valuable",
