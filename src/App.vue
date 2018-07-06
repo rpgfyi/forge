@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app">
+  <div class="hero is-fullheight">
+    <div class="hero-body">
+      <ForgeGenerator msg="Generate an item!"/>
+    </div>
+    <div class="hero-foot">
+      <SiteFooter/>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ForgeGenerator from './components/ForgeGenerator.vue'
+import SiteFooter from './components/SiteFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ForgeGenerator,
+    SiteFooter
   }
 }
 </script>
@@ -23,6 +31,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

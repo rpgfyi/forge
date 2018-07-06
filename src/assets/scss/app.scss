@@ -1,0 +1,103 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+// 1. Set your own initial variables and derived 
+//    variables in _variables.scss
+@import ".variables";
+
+// 2. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+@import "~bulma/sass/utilities/derived-variables";
+
+// 3. Add new color variables to the color map.
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// 4. Provide custom buefy overrides and site styles here
+
+.title {
+  margin-bottom: 1.5em!important;
+}
+
+.item-area {
+  margin: 1em 0 ! important;
+  font-size: 2em;
+}
+
+.spin {
+	-webkit-animation: spin 1.2s ease-out;
+	-moz-animation: spin 1.2s ease-out;
+	-o-animation: spin 1.2s ease-out;
+	animation: spin 1.2s ease-out;
+}
+
+@-moz-keyframes spin {
+	0%
+  {
+    -moz-transform: rotate(0deg);
+         transform: rotate(0deg);
+  }
+  // 50%
+  // {
+  //   -moz-transform: rotate(180deg);
+  //        transform: rotate(180deg);
+  // }
+  100%
+  {
+    -moz-transform: rotate(360deg);
+         transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+	0%
+  {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  // 50%
+  // {
+  //   -webkit-transform: rotate(180deg);
+  //           transform: rotate(180deg);
+  // }
+  100%
+  {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%
+  {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  // 50%
+  // {
+  //   -webkit-transform: rotate(180deg);
+  //           transform: rotate(180deg);
+  // }
+  100%
+  {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+// .spin-enter-active, .spin-leave-active {
+//   -webkit-animation: spin 1.2s ease-out;
+// 	-moz-animation: spin 1.2s ease-out;
+// 	-o-animation: spin 1.2s ease-out;
+//   animation: spin 1.2s ease-out;
+// }

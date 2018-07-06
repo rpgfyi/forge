@@ -1,0 +1,223 @@
+{
+	"forge": {
+		"weapons": [
+			{
+				"items": [
+					{
+						"pre": "Dagger",
+						"desc": "It's small and sharp. A classic."
+					},
+					{
+						"pre": "Short Sword",
+						"desc": "You can hold it in one hand. Think of the possibilities."
+					},
+					{
+						"pre": "Long Sword",
+						"desc": "You're going to need a second hand for this one."
+					},
+					{
+						"pre": "Axe",
+						"desc": "Cuts down trees, among other things. "
+					},
+					{
+						"pre": "Battle Axe",
+						"desc": "It's like a regular axe, but for battle."
+					},
+					{
+						"pre": "Halberd",
+						"desc": "Spear meets axe, it can do it all."
+					},
+
+					{
+						"pre": "Staff",
+						"desc": "Let's be honest, it's a stick."
+					},
+					{
+						"pre": "Spear",
+						"desc": "A stick with a sharp thing on the end."
+					},
+					{
+						"pre": "Siege Spear",
+						"desc": "A big spear. No friend to horses."
+					},
+					{
+						"pre": "Mace",
+						"desc": "A blunt weapon with a heavy head on the end of a handle."
+					},
+					{
+						"pre": "Hammer",
+						"desc": ""
+					},
+					{
+						"pre": "Flail",
+						"desc": ""
+					},
+					{
+						"pre": "Long Bow",
+						"desc": "A more accurate ranged weapon that packs a punch."
+					},
+					{
+						"pre": "Short Bow",
+						"desc": "A ranged weapon that can be used in tight spaces, and while on the move."
+					},
+					{
+						"pre": "Sling",
+						"desc": "A simple ranged weapon."
+					},
+					{
+						"pre": "Crossbow",
+						"desc": "An easy to use ranged weapon, takes time to reload."
+					}
+				],
+				"tags": [
+					{
+						"pre": "Accurate",
+						"desc": "This weapon nearly always strikes true.",
+						"post": "of Certainty"
+					},
+					{
+						"pre": "Alien",
+						"desc": "An unfamiliar item, may not be able to grasp initially.",
+						"post": "of the Stranger"
+					},
+					{
+						"pre": "Unwieldy",
+						"desc": "Hard to maneuver with.",
+						"post": "of the Bungler"
+					},
+					{
+						"pre": "Common",
+						"desc": "You can't walk around the corner without stepping on one of these.",
+						"post": "of the Commoner"
+					},
+					{
+						"pre": "Concealed",
+						"desc": "Easy to hide, hard to find.",
+						"post": "of the Thief"
+					},
+					{
+						"pre": "Deadly",
+						"desc": "Has a tendency to kill whatever ends up in front of it.",
+						"post": ""
+					},
+					{
+						"pre": "Durable",
+						"desc": "It won't blend.",
+						"post": "of Endurance"
+					},
+					{
+						"pre": "Clear-cut",
+						"desc": "So easy to use a baby could wield it.",
+						"post": ""
+					},
+					{
+						"pre": "Elegant",
+						"desc": "You're going to fight, and look good doing it.",
+						"post": ""
+					},
+					{
+						"pre": "Erratic",
+						"desc": "There's no way to know what will happen when you use this.",
+						"post": "of the Unknown"
+					},
+					{
+						"pre": "Giant",
+						"desc": "A truly large weapon. Requires great strength to use, and takes up a lot of space.",
+						"post": "of the Colossus"
+					},
+					{
+						"pre": "Grotesque",
+						"desc": "This thing is seriously disgusting.",
+						"post": "of Horrors"
+					},
+					{
+						"pre": "Heavy",
+						"desc": "",
+						"post": ""
+					},
+					{
+						"pre": "Huge",
+						"desc": "",
+						"post": "of Burden"
+					},
+					{
+						"pre": "Everlasting",
+						"desc": "Can't be destroyed, no matter how hard you try.",
+						"post": "of Durability"
+					},
+					{
+						"pre": "Intimidating",
+						"desc": "Your foes will tremble in fear when they see it.",
+						"post": "of the Oppressor"
+					},
+					{
+						"pre": "Invisible",
+						"desc": "Where'd it go?",
+						"post": "of the Night"
+					},
+					{
+						"pre": "Light",
+						"desc": "Easy to lift and stow.",
+						"post": "of the Feather"
+					},
+					{
+						"pre": "Loud",
+						"desc": "Makes a lot of noise for some reason. Huh.",
+						"post": "of the Chorus"
+					},
+					{
+						"pre": "Crude",
+						"desc": "The most bare-bones implementation of this weapon.",
+						"post": ""
+					},
+					{
+						"pre": "Military",
+						"desc": "Not available in most markets, may be illegal to own.",
+						"post": "of the Solider"
+					},
+					{
+						"pre": "Piercing",
+						"desc": "Can sneak through an enemy's defenses with ease.",
+						"post": "of Piercing"
+					},
+					{
+						"pre": "Powerful",
+						"desc": "",
+						"post": "of the Tyrant"
+					},
+					{
+						"pre": "Ragged",
+						"desc": "Still technically useable, but it's falling apart.",
+						"post": ""
+					},
+					{
+						"pre": "Rare",
+						"desc": "I can't believe you found one of these.",
+						"post": ""
+					},
+					{
+						"pre": "Unblockable",
+						"desc": "No shield can stop it.",
+						"post": ""
+					},
+					{
+						"pre": "Unreliable",
+						"desc": "Does what you want it to do. Sometimes anyway.",
+						"post": ""
+					},
+					{
+						"pre": "Valuable",
+						"desc": "SELL, SELL, SELL.",
+						"post": "of Riches"
+					}
+				]
+			}
+		],
+		"equipment" : [
+			{
+				"items": [],
+				"tags": []
+			}
+		]
+	}
+}
