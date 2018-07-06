@@ -1,23 +1,30 @@
 <template>
 <div id="app">
-  <div class="hero is-fullheight">
+  <section class="hero is-fullheight">
+    <!-- <div class="hero-head">
+      <header class="navbar">
+        <SiteHeader/>
+      </header>
+    </div> -->
     <div class="hero-body">
       <ForgeGenerator msg="Generate an item!"/>
     </div>
-    <div class="hero-foot">
+    <footer class="footer">
       <SiteFooter/>
-    </div>
-  </div>
+    </footer>
+  </section>
 </div>
 </template>
 
 <script>
+import SiteHeader from './components/SiteHeader.vue'
 import ForgeGenerator from './components/ForgeGenerator.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
 export default {
   name: 'app',
   components: {
+    SiteHeader,
     ForgeGenerator,
     SiteFooter
   }

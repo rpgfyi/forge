@@ -1,9 +1,14 @@
 <template>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>An <a href="https://rpg.fyi">rpg.fyi</a> project, made by <a href="https://www.twitter.com/matt_buresh">Matt Buresh</a></p>
+    <div class="container has-text-left">
+        <div class="content">
+            <p>
+                <small>
+                    An <a href="https://rpg.fyi">rpg.fyi</a> project.<br>
+                    Made by <a href="https://www.twitter.com/matt_buresh">Matt Buresh</a>.
+                </small>
+            </p>
             
-            <b-field class="has-addons-centered">
+            <b-field class="has-addons-left">
 
                 <div class="control">
                     <a class="button" href="https://github.com/rpgfyi/forge">
@@ -16,7 +21,7 @@
                 </div>
 
                 <div class="control">
-                    <a class="button" href="https://www.twitter.com/rpgfyi">
+                    <a class="button is-info" href="https://www.twitter.com/rpgfyi">
                         <b-icon
                             icon="twitter"
                             size="is-small">
@@ -28,5 +33,5 @@
             </b-field>
 
         </div>
-    </footer>
+    </div>
 </template>

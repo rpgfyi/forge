@@ -43,9 +43,7 @@
             </b-field>
 
         </div>
-
-        
-        
+       
     </div>
 
 </template>
