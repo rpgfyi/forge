@@ -49,11 +49,6 @@ $colors: map-merge($colors, $addColors);
     -moz-transform: rotate(0deg);
          transform: rotate(0deg);
   }
-  // 50%
-  // {
-  //   -moz-transform: rotate(180deg);
-  //        transform: rotate(180deg);
-  // }
   100%
   {
     -moz-transform: rotate(360deg);
@@ -66,11 +61,6 @@ $colors: map-merge($colors, $addColors);
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  // 50%
-  // {
-  //   -webkit-transform: rotate(180deg);
-  //           transform: rotate(180deg);
-  // }
   100%
   {
     -webkit-transform: rotate(360deg);
@@ -83,21 +73,9 @@ $colors: map-merge($colors, $addColors);
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  // 50%
-  // {
-  //   -webkit-transform: rotate(180deg);
-  //           transform: rotate(180deg);
-  // }
   100%
   {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
-
-// .spin-enter-active, .spin-leave-active {
-//   -webkit-animation: spin 1.2s ease-out;
-// 	-moz-animation: spin 1.2s ease-out;
-// 	-o-animation: spin 1.2s ease-out;
-//   animation: spin 1.2s ease-out;
-// }
