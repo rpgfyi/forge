@@ -2,8 +2,8 @@
     <div class="container has-text-centered">
         
         <img 
+            :src="`${baseUrl}logo.svg`" 
             class="logo" 
-            src="../assets/logo.svg" 
             width="200" 
             height="200">
 
@@ -56,13 +56,10 @@ export default {
   name: 'ForgeGenerator',
   props: {
       msg: String,
-    //   spin: {
-    //       type: Boolean,
-    //       default: true
-    //   }
   },
   data () {
     return {
+      baseUrl: process.env.BASE_URL,
       info: null,
       isActive: false,
       tagPre: null,
@@ -78,7 +75,7 @@ export default {
     }
   },
   mounted() {
-    fetch('/forge.json')
+    fetch('`${baseUrl}forge.json`')
         .then(r => r.json())
         .then(r => {
             let weaponArray = []
