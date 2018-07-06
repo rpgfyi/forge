@@ -1,19 +1,19 @@
 <template>
-<div id="app">
-  <section class="hero is-fullheight">
-    <!-- <div class="hero-head">
-      <header class="navbar">
-        <SiteHeader/>
-      </header>
-    </div> -->
-    <div class="hero-body">
-      <ForgeGenerator msg="Generate an item!"/>
-    </div>
-    <footer class="footer">
-      <SiteFooter/>
-    </footer>
-  </section>
-</div>
+  <div id="app">
+    <section class="hero is-fullheight">
+      <!-- <div class="hero-head">
+        <header class="navbar">
+          <SiteHeader/>
+        </header>
+      </div> -->
+      <div class="hero-body">
+        <ForgeGenerator msg="Generate an item!"/>
+      </div>
+      <footer class="footer">
+        <SiteFooter/>
+      </footer>
+    </section>
+  </div>
 </template>
 
 <script>

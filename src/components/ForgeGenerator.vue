@@ -22,6 +22,7 @@
 
                 <b-radio-button v-model="itemType"
                     native-value="Weapon">
+                    <i class="ra ra-sword ra-fw"></i>
                     Weapon
                 </b-radio-button>
 
@@ -37,7 +38,7 @@
                     Trinket
                 </b-radio-button>
                 <div class="control">
-                    <span class="button is-link" @click="generate(itemType)">Generate {{itemType}}</span>
+                    <span class="button is-link" @click="generate(itemType);gaTrack(itemType)">Generate {{itemType}}</span>
                 </div>
 
             </b-field>
@@ -57,6 +58,7 @@ export default {
   },
   data () {
     return {
+      counter: 0,
       info: null,
       isActive: false,
       tagPre: null,
@@ -107,18 +109,15 @@ export default {
         } else if ("Trinket" === item) {
             // add trinket generator
         }
-        // var timerPromise = new Promise((resolve, reject) => {
-        //     this.isActive = !this.isActive
-        //     setTimeout(() => {
-        //         console.log('1.2 seconds up, resolve')
-        //         resolve();
-        //     }, 1200)
-        // })
-
-        // Promise.all([timerPromise, this.isActive]).then( () => {
-        //     this.isActive = !this.isActive;
-        //     console.log('spinner finished')
-        // })
+    },
+    gaTrack (item) {
+        this.counter = this.counter + 1
+        this.$ga.event({
+            eventCategory: 'Generate',
+            eventAction: item,
+            eventLabel: this.tagPre + ' ' + this.item + ' ' + this.tagPost,
+            eventValue: this.counter
+        })
     }
   }
 }</script>
