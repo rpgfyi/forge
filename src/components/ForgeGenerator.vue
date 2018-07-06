@@ -3,7 +3,7 @@
         
         <img 
             class="logo" 
-            src="logo.svg" 
+            src="../assets/logo.svg" 
             width="200" 
             height="200">
 
@@ -74,7 +74,7 @@ export default {
     }
   },
   mounted() {
-    fetch('forge.json')
+    fetch('/forge.json')
         .then(r => r.json())
         .then(r => {
             let weaponArray = []
