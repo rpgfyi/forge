@@ -27,7 +27,6 @@
 						"pre": "Halberd",
 						"desc": "Spear meets axe, it can do it all."
 					},
-
 					{
 						"pre": "Staff",
 						"desc": "Let's be honest, it's a stick."
@@ -67,7 +66,47 @@
 					{
 						"pre": "Crossbow",
 						"desc": "An easy to use ranged weapon, takes time to reload."
-					}
+					},
+					{
+						"pre": "Triden",
+						"desc": "A three-pronged spear."
+					},
+					{
+						"pre": "Kukri",
+						"desc": "A knife with an inwardly curved blade."
+					},
+					{
+						"pre": "Scimitar",
+						"desc": "A curved sword."
+					},
+					{
+						"pre": "Rapier",
+						"desc": "A slender, pointed sword."
+					},
+					{
+						"pre": "Falchion",
+						"desc": "Machete meets sword."
+					},
+					{
+						"pre": "Lance",
+						"desc": "A pole weapon, generally used by mounted soliders."
+					},
+					{
+						"pre": "Scythe",
+						"desc": "A gardening tool. Also a murdering tool."
+					},
+					{
+						"pre": "Glaive",
+						"desc": "A polearm, with a single edged blade at the head."
+					},
+					{
+						"pre": "Harpoon",
+						"desc": "A long spear-like weapon generally used in fishing."
+					},
+					{
+						"pre": "Butterfly Sword",
+						"desc": "A small, single-edges sword."
+					},
 				],
 				"tags": [
 					{
@@ -122,7 +161,7 @@
 					},
 					{
 						"pre": "Grotesque",
-						"desc": "This thing is seriously disgusting.",
+						"desc": "The stuff of nightmares.",
 						"post": "of Horrors"
 					},
 					{
@@ -141,12 +180,12 @@
 						"post": "of Durability"
 					},
 					{
-						"pre": "Intimidating",
+						"pre": "Terrifying",
 						"desc": "Your foes will tremble in fear when they see it.",
 						"post": "of the Oppressor"
 					},
 					{
-						"pre": "Invisible",
+						"pre": "Unseen",
 						"desc": "Where'd it go?",
 						"post": "of the Night"
 					},
@@ -156,7 +195,7 @@
 						"post": "of the Feather"
 					},
 					{
-						"pre": "Loud",
+						"pre": "Roaring",
 						"desc": "Makes a lot of noise for some reason. Huh.",
 						"post": "of the Chorus"
 					},
@@ -186,9 +225,9 @@
 						"post": "of the Peasant"
 					},
 					{
-						"pre": "Rare",
-						"desc": "I can't believe you found one of these.",
-						"post": "of Marvel"
+						"pre": "Golden",
+						"desc": "A rare item. I can't believe you found one of these.",
+						"post": "of Fortune"
 					},
 					{
 						"pre": "Unreliable",
