@@ -10,9 +10,7 @@
     "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "buefy": "^0.6.3",
-    "rpg-awesome": "^0.2.0",
     "vue": "^2.5.16",
     "vue-analytics": "^5.12.2"
   },
