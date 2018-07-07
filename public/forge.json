@@ -45,7 +45,7 @@
 					},
 					{
 						"pre": "Hammer",
-						"desc": "For nails. Also skulls."
+						"desc": "For nails. Also, skulls."
 					},
 					{
 						"pre": "Flail",
@@ -68,7 +68,7 @@
 						"desc": "An easy to use ranged weapon, takes time to reload."
 					},
 					{
-						"pre": "Triden",
+						"pre": "Trident",
 						"desc": "A three-pronged spear."
 					},
 					{
@@ -89,11 +89,11 @@
 					},
 					{
 						"pre": "Lance",
-						"desc": "A pole weapon, generally used by mounted soliders."
+						"desc": "A pole weapon, generally used by mounted soldiers."
 					},
 					{
 						"pre": "Scythe",
-						"desc": "A gardening tool. Also a murdering tool."
+						"desc": "A gardening tool. Also, a murdering tool."
 					},
 					{
 						"pre": "Glaive",
@@ -271,7 +271,7 @@
 					},
 					{
 						"pre": "Karmic",
-						"desc": "Seems to always strikes true.",
+						"desc": "Seems to always strike true.",
 						"post": "of the Fates"
 					},
 					{
@@ -307,7 +307,7 @@
 					{
 						"pre": "Furious",
 						"post": "of Fury",
-						"desc": "The wielder becomes engraged while using this."
+						"desc": "The wielder becomes enraged while using this."
 					},
 					{
 						"pre": "Ghost",
@@ -317,12 +317,12 @@
 					{
 						"pre": "The Harbinger's",
 						"post": "of the Harbinger",
-						"desc": "Vibrataes when enemies are nearby."
+						"desc": "Vibrates when enemies are nearby."
 					},
 					{
-						"pre": "Nurishing",
+						"pre": "Nourishing",
 						"post": "of the Loam",
-						"desc": "Small plants sprout around it if buried in the ground over night."
+						"desc": "Small plants sprout around it if buried in the ground overnight."
 					},
 					{
 						"pre": "Force",
@@ -331,7 +331,7 @@
 					},
 					{
 						"pre": "Resonating",
-						"post": "of Echos",
+						"post": "of Echoes",
 						"desc": "After hitting an enemy with this weapon, they are stuck by a second weaker spectral version of this weapon."
 					},
 					{
@@ -340,7 +340,7 @@
 						"desc": "You become harder to spot while wielding this."
 					},
 					{
-						"pre": "Souldbound",
+						"pre": "Soul Bound",
 						"post": "of Souls",
 						"desc": "The souls of those killed by this weapon are stored in a gem embedded in it."
 					},
@@ -483,7 +483,7 @@
 					},
 					{
 						"pre": "Quartz",
-						"desc": "A crystallic minneral, generally clear.",
+						"desc": "A crystallic mineral, generally clear.",
 						"post": "of Quartz"
 					},
 					{
@@ -492,9 +492,9 @@
 						"post": "of the Ruby"
 					},
 					{
-						"pre": "Saphire",
+						"pre": "Sapphire",
 						"desc": "A highly valuable precious gemstone.",
-						"post": "of the Saphire"
+						"post": "of the Sapphire"
 					},
 					{
 						"pre": "Turquoise",
