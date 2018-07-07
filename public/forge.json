@@ -306,8 +306,8 @@
 					},
 					{
 						"pre": "Furious",
-						"desc": "of Fury",
-						"post": "The wielder becomes engraged while using this."
+						"post": "of Fury",
+						"desc": "The wielder becomes engraged while using this."
 					},
 					{
 						"pre": "Ghost",
@@ -316,38 +316,38 @@
 					},
 					{
 						"pre": "The Harbinger's",
-						"desc": "of the Harbinger",
-						"post": "Vibrataes when enemies are nearby."
+						"post": "of the Harbinger",
+						"desc": "Vibrataes when enemies are nearby."
 					},
 					{
 						"pre": "Nurishing",
-						"desc": "of the Loam",
-						"post": "Small plants sprout around it if buried in the ground over night."
+						"post": "of the Loam",
+						"desc": "Small plants sprout around it if buried in the ground over night."
 					},
 					{
 						"pre": "Force",
-						"desc": "of Force",
-						"post": "Pushes away anyone who is hit by it."
+						"post": "of Force",
+						"desc": "Pushes away anyone who is hit by it."
 					},
 					{
 						"pre": "Resonating",
-						"desc": "of Echos",
-						"post": "After hitting an enemy with this weapon, they are stuck by a second weaker spectral version of this weapon."
+						"post": "of Echos",
+						"desc": "After hitting an enemy with this weapon, they are stuck by a second weaker spectral version of this weapon."
 					},
 					{
 						"pre": "Shadow",
-						"desc": "of Shadows",
-						"post": "You become harder to spot while wielding this."
+						"post": "of Shadows",
+						"desc": "You become harder to spot while wielding this."
 					},
 					{
 						"pre": "Souldbound",
-						"desc": "of Souls",
-						"post": "The souls of those killed by this weapon are stored in a gem embedded in it."
+						"post": "of Souls",
+						"desc": "The souls of those killed by this weapon are stored in a gem embedded in it."
 					},
 					{
 						"pre": "Swift",
-						"desc": "of Speed",
-						"post": "You move faster while wielding this."
+						"post": "of Speed",
+						"desc": "You move faster while wielding this."
 					}
 				]
 			}
