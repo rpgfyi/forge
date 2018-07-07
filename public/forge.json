@@ -238,6 +238,66 @@
 						"pre": "Valuable",
 						"desc": "SELL, SELL, SELL.",
 						"post": "of Riches"
+					},
+					{
+						"pre": "Arcane",
+						"desc": "This weapon radiates with magical energy.",
+						"post": "of the Mage"
+					},
+					{
+						"pre": "Artisan's",
+						"desc": "Crafted by the most skilled artisan's. A truly unique item.",
+						"post": "of the Artisan"
+					},
+					{
+						"pre": "Blessed",
+						"desc": "Emits a holy aura that strikes fear into unholy abominations.",
+						"post": "of the Lord"
+					},
+					{
+						"pre": "All-Seeing",
+						"desc": "The wielder is more aware of their surroundings.",
+						"post": "of Many Eyes"
+					},
+					{
+						"pre": "The Rat's",
+						"desc": "The wielder seems more likely to strike their friends.",
+						"post": "of the Conspirator"
+					},
+					{
+						"pre": "Frost",
+						"desc": "Sends a chill through its enemies.",
+						"post": "of the North"
+					},
+					{
+						"pre": "Karmic",
+						"desc": "This weapon seems to always strikes true.",
+						"post": "of the Fates"
+					},
+					{
+						"pre": "Humming",
+						"desc": "This weapon emits a low buzzing sound whenever it is used.",
+						"post": "of the Mosquito"
+					},
+					{
+						"pre": "Infected",
+						"desc": "Those struck by this weapon have a chance of becoming infected.",
+						"post": "of Pestilence"
+					},
+					{
+						"pre": "Cursed",
+						"desc": "Enemies struck by this weapon become cursed.",
+						"post": "of Bane"
+					},
+					{
+						"pre": "Caustic",
+						"desc": "Corrodes the weapons and armor it comes into contact with.",
+						"post": "of the Warrior Wasp"
+					},
+					{
+						"pre": "Imbalanced",
+						"desc": "The weapon's balance makes it harder to connect a strike, but you also become harder to hit.",
+						"post": "of the Drunkard"
 					}
 				]
 			}
