@@ -105,13 +105,13 @@
 					},
 					{
 						"pre": "Butterfly Sword",
-						"desc": "A small, single-edges sword."
+						"desc": "A small, single-edged sword."
 					}
 				],
 				"tags": [
 					{
 						"pre": "Accurate",
-						"desc": "This weapon nearly always strikes true.",
+						"desc": "Nearly always strikes true.",
 						"post": "of Certainty"
 					},
 					{
@@ -241,12 +241,12 @@
 					},
 					{
 						"pre": "Arcane",
-						"desc": "This weapon radiates with magical energy.",
+						"desc": "Radiates with magical energy.",
 						"post": "of the Mage"
 					},
 					{
 						"pre": "Artisan's",
-						"desc": "Crafted by the most skilled artisan's. A truly unique item.",
+						"desc": "Crafted by the most skilled artisans. A truly unique item.",
 						"post": "of the Artisan"
 					},
 					{
@@ -271,17 +271,17 @@
 					},
 					{
 						"pre": "Karmic",
-						"desc": "This weapon seems to always strikes true.",
+						"desc": "Seems to always strikes true.",
 						"post": "of the Fates"
 					},
 					{
 						"pre": "Humming",
-						"desc": "This weapon emits a low buzzing sound whenever it is used.",
+						"desc": "Emits a low buzzing sound whenever it is used.",
 						"post": "of the Mosquito"
 					},
 					{
 						"pre": "Infected",
-						"desc": "Those struck by this weapon have a chance of becoming infected.",
+						"desc": "Enemies struck by this weapon have a chance of becoming infected.",
 						"post": "of Pestilence"
 					},
 					{
@@ -298,6 +298,11 @@
 						"pre": "Imbalanced",
 						"desc": "The weapon's balance makes it harder to connect a strike, but you also become harder to hit.",
 						"post": "of the Drunkard"
+					},
+					{
+						"pre": "Ancient",
+						"desc": "From a time gone by.",
+						"post": "of the Ancients"
 					}
 				]
 			}
