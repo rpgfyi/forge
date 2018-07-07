@@ -10,9 +10,9 @@
         <div class="item-area">
 
             {{msg}}
-            <b-tooltip :label="tagPreTooltip" type="is-light" dashed square>{{tagPre}}</b-tooltip>&#32;
-            <b-tooltip :label="itemTooltip" type="is-light" dashed square>{{item}}</b-tooltip>&#32;
-            <b-tooltip :label="tagPostTooltip" type="is-light" dashed square>{{tagPost}}</b-tooltip>
+            <b-tooltip :label="tagPreTooltip" type="is-light" dashed square multilined>{{tagPre}}</b-tooltip>&#32;
+            <b-tooltip :label="itemTooltip" type="is-light" dashed square multilined>{{item}}</b-tooltip>&#32;
+            <b-tooltip :label="tagPostTooltip" type="is-light" dashed square multilined>{{tagPost}}</b-tooltip>
     
         </div>
 
