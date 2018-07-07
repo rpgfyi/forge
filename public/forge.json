@@ -236,7 +236,7 @@
 					},
 					{
 						"pre": "Valuable",
-						"desc": "SELL, SELL, SELL.",
+						"desc": "Incredibly valuable.",
 						"post": "of Riches"
 					},
 					{
@@ -309,8 +309,159 @@
 		],
 		"equipment" : [
 			{
-				"items": [],
+				"items": [
+					{
+						"pre": "Ring Mail",
+						"desc": ""
+					},
+					{
+						"pre": "Padded Armor",
+						"desc": ""
+					},
+					{
+						"pre": "Leather Armor",
+						"desc": ""
+					},
+					{
+						"pre": "Studded Leather Armor",
+						"desc": ""
+					},
+					{
+						"pre": "Hide Armor",
+						"desc": ""
+					},
+					{
+						"pre": "Scale Mail",
+						"desc": ""
+					},
+					{
+						"pre": "Chainmail",
+						"desc": ""
+					},
+					{
+						"pre": "Splint Mail",
+						"desc": ""
+					},
+					{
+						"pre": "Half-plate",
+						"desc": ""
+					},
+					{
+						"pre": "Full Plate",
+						"desc": ""
+					},
+					{
+						"pre": "Buckler",
+						"desc": ""
+					},
+					{
+						"pre": "",
+						"desc": ""
+					}
+				],
 				"tags": []
+			}
+		],
+		"trinkets" : [
+			{
+				"items": [
+					{
+						"pre": "Amulet",
+						"desc": ""
+					},
+					{
+						"pre": "Ring",
+						"desc": ""
+					},
+					{
+						"pre": "Necklace",
+						"desc": ""
+					},
+					{
+						"pre": "Medallion",
+						"desc": ""
+					},
+					{
+						"pre": "Belt",
+						"desc": ""
+					},
+					{
+						"pre": "Pendant",
+						"desc": ""
+					},
+					{
+						"pre": "Codex",
+						"desc": ""
+					},
+					{
+						"pre": "Spyglass",
+						"desc": ""
+					},
+					{
+						"pre": "Mug",
+						"desc": ""
+					},
+					{
+						"pre": "Gloves",
+						"desc": ""
+					},
+					{
+						"pre": "Lantern",
+						"desc": ""
+					}
+				],
+				"tags": [
+					{
+						"pre": "Amber",
+						"desc": "An ancient organic gemstone, made of tree resin.",
+						"post": "of Amber"
+					},
+					{
+						"pre": "Amethyst",
+						"desc": "Violet colored quartz.",
+						"post": "of the Amethyst"
+					},
+					{
+						"pre": "Emerald",
+						"desc": "A green gemstone.",
+						"post": "of the Emerald"
+					},
+					{
+						"pre": "Jade",
+						"desc": "An ornamental mineral, generally green.",
+						"post": "of the Jade"
+					},
+					{
+						"pre": "Jasper",
+						"desc": "A spotted gemstone.",
+						"post": "of Jasper"
+					},
+					{
+						"pre": "Quartz",
+						"desc": "A crystallic minneral, generally clear.",
+						"post": "of Quartz"
+					},
+					{
+						"pre": "Ruby",
+						"desc": "A highly valuable precious gemstone.",
+						"post": "of the Ruby"
+					},
+					{
+						"pre": "Saphire",
+						"desc": "A highly valuable precious gemstone.",
+						"post": "of the Saphire"
+					},
+					{
+						"pre": "Turquoise",
+						"desc": "An opaque, blue-green mineral.",
+						"post": "of Turquoise"
+					},
+					{
+						"pre": "Diamond",
+						"desc": "A highly valuable, and incredibly strong, gemstone.",
+						"post": "of Diamond"
+					}
+				]
 			}
 		]
 	}
