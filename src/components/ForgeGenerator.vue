@@ -1,5 +1,5 @@
 <template>
-    <div class="container has-text-centered">
+    <div class="container">
         
         <img 
             class="logo" 
@@ -55,7 +55,6 @@ export default {
   name: 'ForgeGenerator',
   data () {
     return {
-      counter: 0,
       itemArray: [],
       tagArray: [],
       tooltipsArray: [],
@@ -111,12 +110,11 @@ export default {
         this.msg = ""
     },
     gaTrack (item) {
-        this.counter = this.counter + 1
         this.$ga.event({
             eventCategory: 'Generate',
             eventAction: item,
             eventLabel: this.tagPre + ' ' + this.item + ' ' + this.tagPost,
-            eventValue: this.counter
+            eventValue: 1
         })
     }
   }

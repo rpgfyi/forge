@@ -4,7 +4,8 @@
             <p>
                 <small>
                     An <a href="https://rpg.fyi">rpg.fyi</a> project.<br>
-                    Made by <a href="https://www.twitter.com/matt_buresh">Matt Buresh</a>.
+                    Made by <a href="https://www.twitter.com/matt_buresh">Matt Buresh</a>.<br>
+                    Checkout the <a href="https://github.com/rpgfyi/forge/releases">Changelog</a>.
                 </small>
             </p>
             

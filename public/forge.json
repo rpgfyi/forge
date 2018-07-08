@@ -227,6 +227,11 @@
 						"pre": "Swift",
 						"post": "of Speed",
 						"desc": "You move faster while wielding this."
+					},
+					{
+						"pre": "Mad",
+						"post": "of the Alchemist",
+						"des": "Coated in an alchemical substance that burns whatever it contacts."
 					}
 				]
 			}
@@ -430,6 +435,66 @@
 		"universal": [
 			{
 				"tags": [
+					{
+						"pre": "Deflecting",
+						"desc": "Ranged missiles will sometimes bounce off of you, harmlessly.",
+						"post": "of the Monk"
+					},
+					{
+						"pre": "Raging",
+						"desc": "Your strikes are more powerful.",
+						"post": "of the Barbarian"
+					},
+					{
+						"pre": "Poet's",
+						"desc": "People find you more convincing than you normally are.",
+						"post": "of the Bard"
+					},
+					{
+						"pre": "Restorative",
+						"desc": "Once per day, you can use this to heal someone for a small amount.",
+						"post": "of the Cleric"
+					},
+					{
+						"pre": "Woodland",
+						"desc": "Made from unprocessed, natural materials.",
+						"post": "of the Druid"
+					},
+					{
+						"pre": "Champion's",
+						"desc": "This belonged to a famous champion.",
+						"post": "of the Fighter"
+					},
+					{
+						"pre": "Righteous",
+						"desc": "You are able to follow tracks more easily.",
+						"post": "of the Ranger"
+					},
+					{
+						"pre": "Trickster's",
+						"desc": "You are more aware of people's unattended items.",
+						"post": "of the Rogue"
+					},
+					{
+						"pre": "Wild",
+						"desc": "Randomly emits harmless, magical effects.",
+						"post": "of the Sorcerer"
+					},
+					{
+						"pre": "Seeker's",
+						"desc": "You become aware of the location of a powerful, magical tome.",
+						"post": "of the Warlock"
+					},
+					{
+						"pre": "Enchanted",
+						"desc": "Emits a magical aura.",
+						"post": "of the Wizard"
+					},
+					{
+						"pre": "Probing",
+						"desc": "You gain insight into other's intentions.",
+						"post": "of Inquisition"
+					},
 					{
 						"pre": "Alien",
 						"desc": "An unfamiliar item, may not be able to grasp initially.",
