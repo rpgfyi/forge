@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Buefy from 'buefy'
-import VueAnalytics from 'vue-analytics'
+// import VueAnalytics from 'vue-analytics'
 import './assets/scss/app.scss'
 
 Vue.use(Buefy)
 
-Vue.use(VueAnalytics, {
-  id: 'UA-109246807-2'
-})
+// Vue.use(VueAnalytics, {
+//   id: 'UA-109246807-2'
+// })
 
 Vue.config.productionTip = false
 

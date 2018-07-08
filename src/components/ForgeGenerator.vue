@@ -10,9 +10,9 @@
         <div class="item-area">
 
             {{msg}}
-            <b-tooltip :label="tagPreTooltip" type="is-light" dashed square multilined>{{tagPre}}</b-tooltip>&#32;
-            <b-tooltip :label="itemTooltip" type="is-light" dashed square multilined>{{item}}</b-tooltip>&#32;
-            <b-tooltip :label="tagPostTooltip" type="is-light" dashed square multilined>{{tagPost}}</b-tooltip>
+            <b-tooltip :label="tooltipsArray['pre']" type="is-light" dashed square multilined>{{tagPre}}</b-tooltip>&#32;
+            <b-tooltip :label="tooltipsArray['item']" type="is-light" dashed square multilined>{{item}}</b-tooltip>&#32;
+            <b-tooltip :label="tooltipsArray['post']" type="is-light" dashed square multilined>{{tagPost}}</b-tooltip>
     
         </div>
 
@@ -21,24 +21,24 @@
             <b-field class="has-addons-centered">
 
                 <b-radio-button v-model="itemType"
-                    native-value="Weapon">
+                    native-value="weapon">
                     <i class="ra ra-sword ra-fw"></i>
                     Weapon
                 </b-radio-button>
 
                 <b-radio-button v-model="itemType"
-                    native-value="Armor"
-                    disabled>
+                    native-value="armor"
+                    >
                     Armor
                 </b-radio-button>
 
                 <b-radio-button v-model="itemType"
-                    native-value="Trinket"
-                    disabled>
+                    native-value="trinket"
+                    >
                     Trinket
                 </b-radio-button>
                 <div class="control">
-                    <span class="button is-link" @click="generate(itemType);gaTrack(itemType)">Generate {{itemType}}</span>
+                    <span class="button is-link" @click="generate(itemType)">Generate {{itemType}}</span>
                 </div>
 
             </b-field>
@@ -53,23 +53,17 @@
 
 export default {
   name: 'ForgeGenerator',
-  props: {
-      msg: String,
-  },
   data () {
     return {
       counter: 0,
-      info: null,
-      isActive: false,
+      itemArray: [],
+      tagArray: [],
+      tooltipsArray: [],
       tagPre: null,
       tagPost: null,
-      tagPreToolTip: "",
-      tagPostToolTip: "",
       item: null,
-      itemToolTip: "",
-      weapons: null,
-      weapontags: null,
-      itemType: "Weapon",
+      msg: "Generate and item!",
+      itemType: "weapon",
       selected: 1
     }
   },
@@ -77,38 +71,44 @@ export default {
     fetch('forge.json')
         .then(r => r.json())
         .then(r => {
-            let weaponArray = []
-            for (var i in r.forge.weapons[0]['items']) {
-            weaponArray.push([r.forge.weapons[0]['items'][i].pre, r.forge.weapons[0]['items'][i].desc])
-            }
-            this.weapons = weaponArray;
+            // populate itemArray
+            this.populateItems('armor', r.forge.armor[0]['items'])
+            this.populateItems('trinket', r.forge.trinket[0]['items'])
+            this.populateItems('weapon', r.forge.weapon[0]['items'])
 
-            let tagArray = []
-            for (var j in r.forge.weapons[0]['tags']) {
-            tagArray.push([r.forge.weapons[0]['tags'][j].pre, r.forge.weapons[0]['tags'][j].desc, r.forge.weapons[0]['tags'][j].post])
-            }
-            this.weapontags = tagArray;
+            // populate tagArray
+            this.populateTags('universal', r.forge.universal[0]['tags'])
+            this.populateTags('armor', r.forge.armor[0]['tags'])
+            this.populateTags('trinket', r.forge.trinket[0]['tags'])
+            this.populateTags('weapon', r.forge.weapon[0]['tags'])
         })
-        // .catch(error => console.log(error))
   },
   methods: {
-    generate (item) {
-        if ("Weapon" === item) {
-            let randTagPre = this.weapontags[Math.floor(Math.random() * this.weapontags.length)]
-            let randTagPost = this.weapontags[Math.floor(Math.random() * this.weapontags.length)]
-            let randWeapon = this.weapons[Math.floor(Math.random() * this.weapons.length)]
-            this.tagPre = randTagPre[0] + " "
-            this.tagPreTooltip = randTagPre[1]
-            this.tagPost = randTagPost[2]
-            this.tagPostTooltip = randTagPost[1]
-            this.item = randWeapon[0]
-            this.itemTooltip = randWeapon[1]
-            this.msg = ""
-        } else if ("Armor" === item) {
-            // add armor generator
-        } else if ("Trinket" === item) {
-            // add trinket generator
+    populateItems (type, source) {
+        this.itemArray[type] = []
+        for (var x in source) {
+            this.itemArray[type].push([source[x].pre, source[x].desc])
         }
+        return true;
+    },
+    populateTags (type, source) {
+        this.tagArray[type] = []
+        for (var x in source) {
+            this.tagArray[type].push([source[x].pre, source[x].post, source[x].desc])
+        }
+    },
+    generate (type) {
+        let tags = this.tagArray['universal'].concat(this.tagArray[type])
+        let tag = new Array(tags[Math.floor(Math.random() * tags.length)], tags[Math.floor(Math.random() * tags.length)])
+        let item = this.itemArray[type][Math.floor(Math.random() * this.itemArray[type].length)]
+
+        this.tagPre = tag[0][0]
+        this.tagPost = tag[1][1]
+        this.item = item[0]
+        this.tooltipsArray['pre'] = tag[0][2]
+        this.tooltipsArray['post'] = tag[1][2]
+        this.tooltipsArray['item'] = item[1]
+        this.msg = ""
     },
     gaTrack (item) {
         this.counter = this.counter + 1

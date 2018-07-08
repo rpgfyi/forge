@@ -7,7 +7,7 @@
         </header>
       </div> -->
       <div class="hero-body">
-        <ForgeGenerator msg="Generate an item!"/>
+        <ForgeGenerator/>
       </div>
       <footer class="footer">
         <SiteFooter/>
