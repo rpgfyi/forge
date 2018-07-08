@@ -4,11 +4,12 @@ forge is a system agnostic, descriptive item generator for tabletop RPGs.
 
 ## Todo
 
-- [ ] Add equipment
-- [ ] Add trinkets
-- [ ] Add filtering
-- [ ] More items and tags
-- [ ] Update description text to have a more similar voice
+- [x] Add equipment.
+- [x] Add trinkets.
+- [ ] Add filtering.
+- [ ] Rework the way tags are stored in the json file to allow for more flexible tags.
+- [ ] More items and tags.
+- [ ] Update description text to have a more similar voice.
 
 ## Getting Started
 
