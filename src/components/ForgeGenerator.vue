@@ -38,7 +38,7 @@
                     Trinket
                 </b-radio-button>
                 <div class="control">
-                    <span class="button is-link" @click="generate(itemType)">Generate {{itemType}}</span>
+                    <span class="button is-link" @click="generate(itemType); gaTrack(itemType)">Generate {{itemType}}</span>
                 </div>
 
             </b-field>
