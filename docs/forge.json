@@ -1,6 +1,6 @@
 {
 	"forge": {
-		"weapons": [
+		"weapon": [
 			{
 				"items": [
 					{
@@ -106,6 +106,10 @@
 					{
 						"pre": "Butterfly Sword",
 						"desc": "A small, single-edged sword."
+					},
+					{
+						"pre": "Javelin",
+						"desc": "A light spear, primarily for throwing."
 					}
 				],
 				"tags": [
@@ -115,19 +119,9 @@
 						"post": "of Certainty"
 					},
 					{
-						"pre": "Alien",
-						"desc": "An unfamiliar item, may not be able to grasp initially.",
-						"post": "of the Stranger"
-					},
-					{
 						"pre": "Unwieldy",
 						"desc": "Hard to maneuver with.",
 						"post": "of the Bungler"
-					},
-					{
-						"pre": "Common",
-						"desc": "You can't walk around the corner without stepping on one of these.",
-						"post": "of the Commoner"
 					},
 					{
 						"pre": "Concealed",
@@ -138,11 +132,6 @@
 						"pre": "Deadly",
 						"desc": "Has a tendency to kill whatever ends up in front of it.",
 						"post": "of the Assassin"
-					},
-					{
-						"pre": "Durable",
-						"desc": "Can withstand incredible stress.",
-						"post": "of Grit"
 					},
 					{
 						"pre": "Elegant",
@@ -160,49 +149,9 @@
 						"post": "of the Colossus"
 					},
 					{
-						"pre": "Grotesque",
-						"desc": "The stuff of nightmares.",
-						"post": "of Horrors"
-					},
-					{
-						"pre": "Heavy",
-						"desc": "Takes incredible strength to wield",
-						"post": "of Burden"
-					},
-					{
-						"pre": "Huge",
-						"desc": "Takes up a ton of space. Good lucky moving it.",
-						"post": "of the Hulk"
-					},
-					{
-						"pre": "Everlasting",
-						"desc": "Can't be destroyed, no matter how hard you try.",
-						"post": "of Durability"
-					},
-					{
-						"pre": "Terrifying",
-						"desc": "Your foes will tremble in fear when they see it.",
-						"post": "of the Oppressor"
-					},
-					{
-						"pre": "Hidden",
-						"desc": "Where'd it go?",
-						"post": "of the Night"
-					},
-					{
-						"pre": "Light",
-						"desc": "Easy to lift and stow.",
-						"post": "of the Feather"
-					},
-					{
 						"pre": "Roaring",
 						"desc": "Makes a lot of noise for some reason. Huh.",
 						"post": "of the Chorus"
-					},
-					{
-						"pre": "Homemade",
-						"desc": "The most bare-bones implementation of this weapon.",
-						"post": "of the Amateur"
 					},
 					{
 						"pre": "Military",
@@ -220,46 +169,6 @@
 						"post": "of the Tyrant"
 					},
 					{
-						"pre": "Ragged",
-						"desc": "Still technically useable, but it's falling apart.",
-						"post": "of the Peasant"
-					},
-					{
-						"pre": "Golden",
-						"desc": "A rare item. I can't believe you found one of these.",
-						"post": "of Fortune"
-					},
-					{
-						"pre": "Unreliable",
-						"desc": "Does what you want it to do. Sometimes anyway.",
-						"post": "of the Trickster"
-					},
-					{
-						"pre": "Valuable",
-						"desc": "Incredibly valuable.",
-						"post": "of Riches"
-					},
-					{
-						"pre": "Arcane",
-						"desc": "Radiates with magical energy.",
-						"post": "of the Mage"
-					},
-					{
-						"pre": "Artisan's",
-						"desc": "Crafted by the most skilled artisans. A truly unique item.",
-						"post": "of the Artisan"
-					},
-					{
-						"pre": "Blessed",
-						"desc": "Emits a holy aura that strikes fear into unholy abominations.",
-						"post": "of the Lord"
-					},
-					{
-						"pre": "All-Seeing",
-						"desc": "The wielder is more aware of their surroundings.",
-						"post": "of Many Eyes"
-					},
-					{
 						"pre": "The Rat's",
 						"desc": "The wielder seems more likely to strike their friends.",
 						"post": "of the Conspirator"
@@ -273,11 +182,6 @@
 						"pre": "Karmic",
 						"desc": "Seems to always strike true.",
 						"post": "of the Fates"
-					},
-					{
-						"pre": "Humming",
-						"desc": "Emits a low buzzing sound whenever it is used.",
-						"post": "of the Mosquito"
 					},
 					{
 						"pre": "Infected",
@@ -300,29 +204,9 @@
 						"post": "of the Drunkard"
 					},
 					{
-						"pre": "Ancient",
-						"desc": "From a time gone by.",
-						"post": "of the Ancients"
-					},
-					{
 						"pre": "Furious",
 						"post": "of Fury",
 						"desc": "The wielder becomes enraged while using this."
-					},
-					{
-						"pre": "Ghost",
-						"post": "of the Forgotten",
-						"desc": "Once per day, the wielder can pass through a solid object."
-					},
-					{
-						"pre": "The Harbinger's",
-						"post": "of the Harbinger",
-						"desc": "Vibrates when enemies are nearby."
-					},
-					{
-						"pre": "Nourishing",
-						"post": "of the Loam",
-						"desc": "Small plants sprout around it if buried in the ground overnight."
 					},
 					{
 						"pre": "Force",
@@ -335,11 +219,6 @@
 						"desc": "After hitting an enemy with this weapon, they are stuck by a second weaker spectral version of this weapon."
 					},
 					{
-						"pre": "Shadow",
-						"post": "of Shadows",
-						"desc": "You become harder to spot while wielding this."
-					},
-					{
 						"pre": "Soul Bound",
 						"post": "of Souls",
 						"desc": "The souls of those killed by this weapon are stored in a gem embedded in it."
@@ -348,111 +227,155 @@
 						"pre": "Swift",
 						"post": "of Speed",
 						"desc": "You move faster while wielding this."
+					},
+					{
+						"pre": "Mad",
+						"post": "of the Alchemist",
+						"des": "Coated in an alchemical substance that burns whatever it contacts."
 					}
 				]
 			}
 		],
-		"equipment" : [
+		"armor": [
 			{
 				"items": [
 					{
 						"pre": "Ring Mail",
-						"desc": ""
+						"desc": "Armor made from metalic rings sewn into a leather or fabric foundation."
 					},
 					{
 						"pre": "Padded Armor",
-						"desc": ""
+						"desc": "A thick defensive jacket."
 					},
 					{
 						"pre": "Leather Armor",
-						"desc": ""
+						"desc": "Made of boiled leather."
 					},
 					{
 						"pre": "Studded Leather Armor",
-						"desc": ""
+						"desc": "Leather armor with metal studs."
 					},
 					{
 						"pre": "Hide Armor",
-						"desc": ""
+						"desc": "Armor made from the hide of an animal."
 					},
 					{
 						"pre": "Scale Mail",
-						"desc": ""
+						"desc": "Consists of a leather base with overlapping pieces of metal."
 					},
 					{
 						"pre": "Chainmail",
-						"desc": ""
+						"desc": "Armor made of small metal rings linked together to form a mesh."
 					},
 					{
 						"pre": "Splint Mail",
-						"desc": ""
+						"desc": "Limb armor where strips of metal are attached to a fabric foundation."
 					},
 					{
 						"pre": "Half-plate",
-						"desc": ""
+						"desc": "A combination of chainmail and metal plates protecting vital areas."
 					},
 					{
 						"pre": "Full Plate",
-						"desc": ""
+						"desc": "Armor made entirely of plate."
 					},
 					{
 						"pre": "Buckler",
-						"desc": ""
+						"desc": "A small, round shield."
 					},
 					{
-						"pre": "",
-						"desc": ""
+						"pre": "Robes",
+						"desc": "Offers very little protection"
+					},
+					{
+						"pre": "Shield",
+						"desc": "Wooden or steel, provides decent protection."
+					},
+					{
+						"pre": "Tower Shield",
+						"desc": "Large, heavy shield. Good at blocking missine fire."
 					}
 				],
-				"tags": []
+				"tags": [
+					{
+						"pre": "Defiant",
+						"desc": "You become resistant to a type of damage.",
+						"post": "of Resistance"
+					},
+					{
+						"pre": "Smoldering",
+						"desc": "Odorless smoke rises from this while being worn.",
+						"post": "of Ashes"
+					}
+				]
 			}
 		],
-		"trinkets" : [
+		"trinket": [
 			{
 				"items": [
 					{
 						"pre": "Amulet",
-						"desc": ""
+						"desc": "Object with magical properties."
 					},
 					{
 						"pre": "Ring",
-						"desc": ""
+						"desc": "Jewelry for your finger."
 					},
 					{
 						"pre": "Necklace",
-						"desc": ""
+						"desc": "Like a pendant."
 					},
 					{
 						"pre": "Medallion",
-						"desc": ""
+						"desc": "Small metal disc with a design on both sides."
 					},
 					{
 						"pre": "Belt",
-						"desc": ""
+						"desc": "Keeps your pants up."
 					},
 					{
 						"pre": "Pendant",
-						"desc": ""
+						"desc": "Like a necklace."
 					},
 					{
 						"pre": "Codex",
-						"desc": ""
+						"desc": "A large book."
 					},
 					{
 						"pre": "Spyglass",
-						"desc": ""
+						"desc": "A handheld telescope."
 					},
 					{
 						"pre": "Mug",
-						"desc": ""
+						"desc": "Cup for drinking."
 					},
 					{
 						"pre": "Gloves",
-						"desc": ""
+						"desc": "They cover your hands."
 					},
 					{
 						"pre": "Lantern",
-						"desc": ""
+						"desc": "A protective enclosure for a light source."
+					},
+					{
+						"pre": "Flask",
+						"desc": "A small liquid container."
+					},
+					{
+						"pre": "Coin",
+						"desc": "A piece of currency from a far away land."
+					},
+					{
+						"pre": "Orb",
+						"desc": "A small globe-like figurine."
+					},
+					{
+						"pre": "Antler",
+						"desc": "The horn from a member of the deer family."
+					},
+					{
+						"pre": "Cloak",
+						"desc": "A loose outer garment."
 					}
 				],
 				"tags": [
@@ -505,6 +428,227 @@
 						"pre": "Diamond",
 						"desc": "A highly valuable, and incredibly strong, gemstone.",
 						"post": "of Diamond"
+					}
+				]
+			}
+		],
+		"universal": [
+			{
+				"tags": [
+					{
+						"pre": "Deflecting",
+						"desc": "Ranged missiles will sometimes bounce off of you, harmlessly.",
+						"post": "of the Monk"
+					},
+					{
+						"pre": "Raging",
+						"desc": "Your strikes are more powerful.",
+						"post": "of the Barbarian"
+					},
+					{
+						"pre": "Poet's",
+						"desc": "People find you more convincing than you normally are.",
+						"post": "of the Bard"
+					},
+					{
+						"pre": "Restorative",
+						"desc": "Once per day, you can use this to heal someone for a small amount.",
+						"post": "of the Cleric"
+					},
+					{
+						"pre": "Woodland",
+						"desc": "Made from unprocessed, natural materials.",
+						"post": "of the Druid"
+					},
+					{
+						"pre": "Champion's",
+						"desc": "This belonged to a famous champion.",
+						"post": "of the Fighter"
+					},
+					{
+						"pre": "Righteous",
+						"desc": "You are able to follow tracks more easily.",
+						"post": "of the Ranger"
+					},
+					{
+						"pre": "Trickster's",
+						"desc": "You are more aware of people's unattended items.",
+						"post": "of the Rogue"
+					},
+					{
+						"pre": "Wild",
+						"desc": "Randomly emits harmless, magical effects.",
+						"post": "of the Sorcerer"
+					},
+					{
+						"pre": "Seeker's",
+						"desc": "You become aware of the location of a powerful, magical tome.",
+						"post": "of the Warlock"
+					},
+					{
+						"pre": "Enchanted",
+						"desc": "Emits a magical aura.",
+						"post": "of the Wizard"
+					},
+					{
+						"pre": "Probing",
+						"desc": "You gain insight into other's intentions.",
+						"post": "of Inquisition"
+					},
+					{
+						"pre": "Alien",
+						"desc": "An unfamiliar item, may not be able to grasp initially.",
+						"post": "of the Stranger"
+					},
+					{
+						"pre": "Homemade",
+						"desc": "Not a particulary well made item.",
+						"post": "of the Amateur"
+					},
+					{
+						"pre": "Everlasting",
+						"desc": "Can't be destroyed, no matter how hard you try.",
+						"post": "of Durability"
+					},
+					{
+						"pre": "Terrifying",
+						"desc": "Others will tremble in fear when they see this.",
+						"post": "of the Oppressor"
+					},
+					{
+						"pre": "Common",
+						"desc": "There isn't anything exiting or unique about this.",
+						"post": "of the Commoner"
+					},
+					{
+						"pre": "Grotesque",
+						"desc": "The stuff of nightmares.",
+						"post": "of Horrors"
+					},
+					{
+						"pre": "Artisan's",
+						"desc": "Crafted by the most skilled artisans. A truly unique item.",
+						"post": "of the Artisan"
+					},
+					{
+						"pre": "Heavy",
+						"desc": "Much heavier than you would expect it to be.",
+						"post": "of Burden"
+					},
+					{
+						"pre": "Huge",
+						"desc": "Takes up a ton of space. Hard to maneuver with.",
+						"post": "of the Hulk"
+					},
+					{
+						"pre": "Hidden",
+						"desc": "Others will have a hard time spotting this.",
+						"post": "of the Night"
+					},
+					{
+						"pre": "Light",
+						"desc": "Easy to lift and stow.",
+						"post": "of the Feather"
+					},
+					{
+						"pre": "Ragged",
+						"desc": "Still technically useable, but it's falling apart.",
+						"post": "of the Peasant"
+					},
+					{
+						"pre": "Arcane",
+						"desc": "Radiates with magical energy.",
+						"post": "of the Mage"
+					},
+					{
+						"pre": "Golden",
+						"desc": "A truly rare item.",
+						"post": "of Fortune"
+					},
+					{
+						"pre": "Unreliable",
+						"desc": "Works as expected, except when it doesn't",
+						"post": "of the Trickster"
+					},
+					{
+						"pre": "Valuable",
+						"desc": "Incredibly valuable.",
+						"post": "of Riches"
+					},
+					{
+						"pre": "Humming",
+						"desc": "Constantly emits a low buzzing sound.",
+						"post": "of the Mosquito"
+					},
+					{
+						"pre": "All-Seeing",
+						"desc": "You become more aware of your surroundings.",
+						"post": "of Many Eyes"
+					},
+					{
+						"pre": "Ghost",
+						"post": "of the Forgotten",
+						"desc": "Once per day, this will alow you to pass through a solid object."
+					},
+					{
+						"pre": "Auspicious",
+						"post": "of the Harbinger",
+						"desc": "Vibrates when enemies are nearby."
+					},
+					{
+						"pre": "Shadow",
+						"post": "of Shadows",
+						"desc": "You more easily pass unnoticed."
+					},
+					{
+						"pre": "Nourishing",
+						"post": "of the Loam",
+						"desc": "Small plants sprout around it if buried in the ground overnight."
+					},
+					{
+						"pre": "Ancient",
+						"desc": "From a time gone by.",
+						"post": "of the Ancients"
+					},
+					{
+						"pre": "Durable",
+						"desc": "Can withstand incredible stress.",
+						"post": "of Grit"
+					},
+					{
+						"pre": "Blessed",
+						"desc": "Emits a holy aura that strikes fear into unholy abominations.",
+						"post": "of the Lord"
+					},
+					{
+						"pre": "Cursed",
+						"desc": "Enemies struck by this weapon become cursed.",
+						"post": "of Bane"
+					},
+					{
+						"pre": "Heroic",
+						"desc": "Belonged to a hero from another age.",
+						"post": "of Heroes"
+					},
+					{
+						"pre": "Frail",
+						"desc": "Almost ready to break.",
+						"post": "of Fragility"
+					},
+					{
+						"pre": "Sentinel",
+						"desc": "You knoe when enemies are nearby.",
+						"post": "of the Sentinel"
+					},
+					{
+						"pre": "Guardian's",
+						"desc": "Emits an aura of protection for nearby friends.",
+						"post": "of the Guardian"
+					},
+					{
+						"pre": "Abyssal",
+						"desc": "You can only speak Abyssal while wearing or using this.",
+						"post": "of the Demon"
 					}
 				]
 			}
