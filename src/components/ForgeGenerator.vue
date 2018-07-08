@@ -61,7 +61,7 @@ export default {
       tagPre: null,
       tagPost: null,
       item: null,
-      msg: "Generate and item!",
+      msg: "Generate an item!",
       itemType: "weapon",
       selected: 1
     }
