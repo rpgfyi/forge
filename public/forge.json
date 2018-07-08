@@ -301,11 +301,6 @@
 						"pre": "Smoldering",
 						"desc": "Odorless smoke rises from this while being worn.",
 						"post": "of Ashes"
-					},
-					{
-						"pre": "",
-						"desc": "",
-						"post": ""
 					}
 				]
 			}
@@ -315,67 +310,67 @@
 				"items": [
 					{
 						"pre": "Amulet",
-						"desc": ""
+						"desc": "Object with magical properties."
 					},
 					{
 						"pre": "Ring",
-						"desc": ""
+						"desc": "Jewelry for your finger."
 					},
 					{
 						"pre": "Necklace",
-						"desc": ""
+						"desc": "Like a pendant."
 					},
 					{
 						"pre": "Medallion",
-						"desc": ""
+						"desc": "Small metal disc with a design on both sides."
 					},
 					{
 						"pre": "Belt",
-						"desc": ""
+						"desc": "Keeps your pants up."
 					},
 					{
 						"pre": "Pendant",
-						"desc": ""
+						"desc": "Like a necklace."
 					},
 					{
 						"pre": "Codex",
-						"desc": ""
+						"desc": "A large book."
 					},
 					{
 						"pre": "Spyglass",
-						"desc": ""
+						"desc": "A handheld telescope."
 					},
 					{
 						"pre": "Mug",
-						"desc": ""
+						"desc": "Cup for drinking."
 					},
 					{
 						"pre": "Gloves",
-						"desc": ""
+						"desc": "They cover your hands."
 					},
 					{
 						"pre": "Lantern",
-						"desc": ""
+						"desc": "A protective enclosure for a light source."
 					},
 					{
 						"pre": "Flask",
-						"desc": ""
+						"desc": "A small liquid container."
 					},
 					{
 						"pre": "Coin",
-						"desc": ""
+						"desc": "A piece of currency from a far away land."
 					},
 					{
 						"pre": "Orb",
-						"desc": ""
+						"desc": "A small globe-like figurine."
 					},
 					{
-						"pre": "Horn",
-						"desc": ""
+						"pre": "Antler",
+						"desc": "The horn from a member of the deer family."
 					},
 					{
 						"pre": "Cloak",
-						"desc": ""
+						"desc": "A loose outer garment."
 					}
 				],
 				"tags": [
@@ -577,18 +572,13 @@
 					},
 					{
 						"pre": "Sentinel",
-						"desc": "",
+						"desc": "You knoe when enemies are nearby.",
 						"post": "of the Sentinel"
 					},
 					{
 						"pre": "Guardian's",
-						"desc": "",
+						"desc": "Emits an aura of protection for nearby friends.",
 						"post": "of the Guardian"
-					},
-					{
-						"pre": "Elemental",
-						"desc": "",
-						"post": "of the Elements"
 					},
 					{
 						"pre": "Abyssal",
