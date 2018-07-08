@@ -357,47 +357,47 @@
 				"items": [
 					{
 						"pre": "Ring Mail",
-						"desc": ""
+						"desc": "Armor made from metalic rings sewn into a leather or fabric foundation."
 					},
 					{
 						"pre": "Padded Armor",
-						"desc": ""
+						"desc": "A thick defensive jacket."
 					},
 					{
 						"pre": "Leather Armor",
-						"desc": ""
+						"desc": "Made of boiled leather."
 					},
 					{
 						"pre": "Studded Leather Armor",
-						"desc": ""
+						"desc": "Leather armor with metal studs."
 					},
 					{
 						"pre": "Hide Armor",
-						"desc": ""
+						"desc": "Armor made from the hide of an animal."
 					},
 					{
 						"pre": "Scale Mail",
-						"desc": ""
+						"desc": "Consists of a leather base with overlapping pieces of metal."
 					},
 					{
 						"pre": "Chainmail",
-						"desc": ""
+						"desc": "Armor made of small metal rings linked together to form a mesh."
 					},
 					{
 						"pre": "Splint Mail",
-						"desc": ""
+						"desc": "Limb armor where strips of metal are attached to a fabric foundation."
 					},
 					{
 						"pre": "Half-plate",
-						"desc": ""
+						"desc": "A combination of chainmail and metal plates protecting vital areas."
 					},
 					{
 						"pre": "Full Plate",
-						"desc": ""
+						"desc": "Armor made entirely of plate."
 					},
 					{
 						"pre": "Buckler",
-						"desc": ""
+						"desc": "A small, round shield."
 					},
 					{
 						"pre": "",
