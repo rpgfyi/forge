@@ -110,9 +110,10 @@ export default {
         this.msg = ""
     },
     gaTrack (item) {
+        let itemName = item.charAt(0).toUpperCase() + item.slice(1)
         this.$ga.event({
             eventCategory: 'Generate',
-            eventAction: item,
+            eventAction: itemName,
             eventLabel: this.tagPre + ' ' + this.item + ' ' + this.tagPost,
             eventValue: 1
         })
