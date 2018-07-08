@@ -106,6 +106,10 @@
 					{
 						"pre": "Butterfly Sword",
 						"desc": "A small, single-edged sword."
+					},
+					{
+						"pre": "Javelin",
+						"desc": "A light spear, primarily for throwing."
 					}
 				],
 				"tags": [
@@ -275,11 +279,35 @@
 						"desc": "A small, round shield."
 					},
 					{
-						"pre": "",
-						"desc": ""
+						"pre": "Robes",
+						"desc": "Offers very little protection"
+					},
+					{
+						"pre": "Shield",
+						"desc": "Wooden or steel, provides decent protection."
+					},
+					{
+						"pre": "Tower Shield",
+						"desc": "Large, heavy shield. Good at blocking missine fire."
 					}
 				],
-				"tags": []
+				"tags": [
+					{
+						"pre": "Defiant",
+						"desc": "You become resistant to a type of damage.",
+						"post": "of Resistance"
+					},
+					{
+						"pre": "Smoldering",
+						"desc": "Odorless smoke rises from this while being worn.",
+						"post": "of Ashes"
+					},
+					{
+						"pre": "",
+						"desc": "",
+						"post": ""
+					}
+				]
 			}
 		],
 		"trinket": [
@@ -327,6 +355,26 @@
 					},
 					{
 						"pre": "Lantern",
+						"desc": ""
+					},
+					{
+						"pre": "Flask",
+						"desc": ""
+					},
+					{
+						"pre": "Coin",
+						"desc": ""
+					},
+					{
+						"pre": "Orb",
+						"desc": ""
+					},
+					{
+						"pre": "Horn",
+						"desc": ""
+					},
+					{
+						"pre": "Cloak",
 						"desc": ""
 					}
 				],
@@ -516,6 +564,36 @@
 						"pre": "Cursed",
 						"desc": "Enemies struck by this weapon become cursed.",
 						"post": "of Bane"
+					},
+					{
+						"pre": "Heroic",
+						"desc": "Belonged to a hero from another age.",
+						"post": "of Heroes"
+					},
+					{
+						"pre": "Frail",
+						"desc": "Almost ready to break.",
+						"post": "of Fragility"
+					},
+					{
+						"pre": "Sentinel",
+						"desc": "",
+						"post": "of the Sentinel"
+					},
+					{
+						"pre": "Guardian's",
+						"desc": "",
+						"post": "of the Guardian"
+					},
+					{
+						"pre": "Elemental",
+						"desc": "",
+						"post": "of the Elements"
+					},
+					{
+						"pre": "Abyssal",
+						"desc": "You can only speak Abyssal while wearing or using this.",
+						"post": "of the Demon"
 					}
 				]
 			}
