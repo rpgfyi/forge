@@ -9,35 +9,7 @@
 
         <div class="item-area">
 
-            {{msg}}
-            <b-tooltip v-if="outputArray['quality']" 
-                :label="tooltipsArray['quality']" 
-                type="is-light" 
-                dashed 
-                square 
-                multilined>{{outputArray['quality'][0]}}
-            </b-tooltip>
-            <b-tooltip v-if="outputArray['pre']"
-                :label="tooltipsArray['pre']"
-                type="is-light"
-                dashed
-                square
-                multilined>{{outputArray['pre'][2]}}
-            </b-tooltip>
-            <b-tooltip v-if="outputArray['item']"
-                :label="tooltipsArray['item']"
-                type="is-light"
-                dashed
-                square
-                multilined>{{outputArray['item'][0]}}
-            </b-tooltip>
-            <b-tooltip v-if="outputArray['post']"
-                :label="tooltipsArray['post']"
-                type="is-light"
-                dashed
-                square
-                multilined>{{outputArray['post'][3]}}
-            </b-tooltip>
+            {{output}}
     
         </div>
 
@@ -49,7 +21,7 @@
                         size="is-small"
                         icon="tag">
                     </b-icon>
-                    <span>{{item}}</span>
+                    <span>{{item | capitalize}}</span>
                 </b-tag>
             </b-taglist>
 
@@ -118,85 +90,63 @@ export default {
   name: 'ForgeGenerator',
   data () {
     return {
-      itemArray: [],
-      qualityArray: [],
-      tagArray: [],
+      items: [],
+      tags: [],
+      qualities: [],
+      descriptors: [],
       tagList: [],
-      tooltipsArray: [],
-      outputArray: {
-          quality: '',
-          pre: '',
-          item: '',
-          post: ''
-      },
-      quality: null,
-      tagPre: null,
-      tagPost: null,
-      item: null,
-      msg: "Generate an item!",
+      output: "Generate an item!",
       itemType: "weapon",
       complexity: "default",
       selected: 1
     }
   },
   mounted() {
-    fetch('forge-new.json')
+    fetch('forge-final.json')
         .then(r => r.json())
         .then(r => {
-            this.populateItems('armor', r.forge.items.armor)
-            this.populateItems('trinket', r.forge.items.trinket)
-            this.populateItems('weapon', r.forge.items.weapon)
-
-            this.tagArray['armor'] = []
-            this.tagArray['trinket'] = []
-            this.tagArray['weapon'] = []
-            this.populateTags(r.forge.tags)
-
-            this.populateQuality(r.forge.quality)
+            this.qualities = this.populateObject(r.forge.quality)
+            this.descriptors = this.populateObject(r.forge.descriptors)
+            this.items = this.populateObject(r.forge.items)
+            this.tags = this.populateObject(r.forge.tags)
         })
   },
+  filters: {
+      capitalize: function (value) {
+          if (!value) return ''
+          value = value.toString()
+          return value.charAt(0).toUpperCase() + value.slice(1)
+      }
+  },
   methods: {
-    populateItems (type, source) {
-        this.itemArray[type] = []
+    populateObject (source) {
+        let itemArray = []
         for (var x in source) {
-            this.itemArray[type]
-                .push([
-                    source[x].pre,
-                    source[x].desc
-                ])
+            itemArray.push([x, source[x]])
         }
-        return true;
-    },
-    populateTags (source) {
-        
-        for (var x in source) {
-            for (var y in source[x].type) {
-                this.tagArray[source[x].type[y]]
-                    .push([
-                        source[x].name,
-                        source[x].desc,
-                        source[x].pre,
-                        source[x].post
-                    ])
-            }
-        }
-    },
-    populateQuality (source) {
-        for (var x in source) {
-            this.qualityArray.push([source[x].name, source[x].desc])
-        }
+        return itemArray
     },
     generate (type, complexity) {
-        // console.log(this.tagArray)
-        let tags = this.tagArray[type]
-        let tag = new Array(tags[Math.floor(Math.random() * tags.length)], tags[Math.floor(Math.random() * tags.length)])
-        let item = this.itemArray[type][Math.floor(Math.random() * this.itemArray[type].length)]
-        let quality = this.qualityArray[Math.floor(Math.random() * this.qualityArray.length)]
+        let desc = this.descriptors.filter(obj => {
+            return obj[1].type.includes(type)
+        })
+        desc = new Array(
+            desc[Math.floor(Math.random() * desc.length)],
+            desc[Math.floor(Math.random() * desc.length)]
+        )
+
+        let item = this.items.filter(obj => {
+            return obj.includes(type)
+        })
+        item = item[0][1][Math.floor(Math.random() * item[0][1].length)]
+
+        let quality = this.qualities[Math.floor(Math.random() * this.qualities.length)]
+    
         let itemObject = {
-            quality: quality,
-            pre: tag[0],
+            quality: quality[1],
+            pre: desc[0][1].pre,
             item: item,
-            post: tag[1]
+            post: desc[1][1].post
         }
 
         if (complexity === 'simple') {
@@ -208,12 +158,14 @@ export default {
             let remove = this.remove(itemObject, 'item')
             delete itemObject[remove]
         }
-        
-        this.emptyOutputArray()
+
+        let output = ''
         for (var x in itemObject) {
-            this.outputArray[x] = itemObject[x]
+            output += itemObject[x] + " "
         }
-        this.msg = ""
+        this.tagList = [desc[0][1].tags[0], desc[1][1].tags[0]]
+        this.output = output.trim()
+        // console.log(this.output)
     },
     remove (obj, excludeKey) {
         let rand = null
@@ -223,20 +175,12 @@ export default {
         }
         return rand
     },
-    emptyOutputArray () {
-        this.outputArray = {
-            quality: '',
-            pre: '',
-            item: '',
-            post: ''
-        }
-    },
     gaTrack (item) {
         let itemName = item.charAt(0).toUpperCase() + item.slice(1)
         this.$ga.event({
             eventCategory: 'Generate',
             eventAction: itemName,
-            eventLabel: this.tagPre + ' ' + this.item + ' ' + this.tagPost,
+            eventLabel: this.output,
             eventValue: 1
         })
     }

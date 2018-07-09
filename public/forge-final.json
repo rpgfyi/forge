@@ -1,0 +1,123 @@
+{
+  "forge": {
+    "items": {
+      "weapon": [
+        "Dagger",
+        "Short Sword",
+        "Long Sword",
+        "Axe",
+        "Battle Axe",
+        "Halberd",
+        "Staff",
+        "Spear",
+        "Siege Spear",
+        "Mace",
+        "Hammer",
+        "Flail",
+        "Long Bow",
+        "Short Bow",
+        "Sling",
+        "Crossbow",
+        "Trident",
+        "Kukri",
+        "Scimitar",
+        "Rapier",
+        "Falchion",
+        "Lance",
+        "Scythe",
+        "Glaive",
+        "Harpoon",
+        "Butterfly Sword",
+        "Javelin"
+      ],
+      "armor": [
+        "Ring Mail",
+        "Padded Armor",
+        "Leather Armor",
+        "Studded Leather Armor",
+        "Hide Armor",
+        "Scale Mail",
+        "Chainmail",
+        "Splint Mail",
+        "Half-plate",
+        "Full Plate",
+        "Buckler",
+        "Robes",
+        "Shield",
+        "Tower Shield"
+      ],
+      "trinket": [
+        "Amulet",
+        "Ring",
+        "Necklace",
+        "Medallion",
+        "Belt",
+        "Pendant",
+        "Codex",
+        "Spyglass",
+        "Mug",
+        "Gloves",
+        "Lantern",
+        "Flask",
+        "Coin",
+        "Orb",
+        "Antler",
+        "Cloak"
+      ]
+    },
+    "tags": [
+      {
+        "name": "accurate",
+        "desc": "This weapon almost never misses."
+      },
+      {
+        "name": "concealed",
+        "desc": "Easy to hide, hard to find."
+      },
+      {
+        "name": "large",
+        "desc": "Requires above average strength to move or use."
+      },
+      {
+        "name": "loud",
+        "desc": "Makes loud noises whenever you use it."
+      }
+    ],
+    "descriptors": [
+      {
+        "pre": "Accurate",
+        "post": "of Certainty",
+        "tags": ["accurate"],
+        "type": ["weapon"]
+      },
+      {
+        "pre": "Concealed",
+        "post": "of the Thief",
+        "tags": ["concealed"],
+        "type": ["trinket", "weapon"]
+      },
+      {
+        "pre": "Giant",
+        "post": "of the Colossus",
+        "tags": ["large"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Roaring",
+        "post": "of the Chorus",
+        "tags": ["loud"],
+        "type": ["armor","trinket","weapon"]
+      }
+    ],
+    "quality": [
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Mythic",
+        "Legendary",
+        "Heroic",
+        "Ancient",
+        "Broken"
+    ]
+  }
+}
