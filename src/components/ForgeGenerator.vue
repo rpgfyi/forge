@@ -19,28 +19,12 @@
         <b-field position="is-centered">
 
             <b-taglist>
-                <b-tag type="is-info" icon="tag">
+                <b-tag type="is-info" icon="tag" v-for="item in tagList">
                     <b-icon
                         size="is-small"
                         icon="tag">
                     </b-icon>
-                    <span>Tag 1</span>
-                </b-tag>
-
-                <b-tag type="is-info" icon="tag">
-                    <b-icon
-                        size="is-small"
-                        icon="tag">
-                    </b-icon>
-                    <span>Tag 2</span>
-                </b-tag>
-
-                <b-tag type="is-info" icon="tag">
-                    <b-icon
-                        size="is-small"
-                        icon="tag">
-                    </b-icon>
-                    <span>Tag 3</span>
+                    <span>{{item}}</span>
                 </b-tag>
             </b-taglist>
 
@@ -89,6 +73,7 @@ export default {
     return {
       itemArray: [],
       tagArray: [],
+      tagList: [],
       tooltipsArray: [],
       tagPre: null,
       tagPost: null,
@@ -102,7 +87,6 @@ export default {
     fetch('forge-new.json')
         .then(r => r.json())
         .then(r => {
-            // console.log(r.forge.items)
             this.populateItems('armor', r.forge.items.armor)
             this.populateItems('trinket', r.forge.items.trinket)
             this.populateItems('weapon', r.forge.items.weapon)
@@ -140,15 +124,16 @@ export default {
         }
     },
     generate (type) {
-        let tags = this.tagArray['universal'].concat(this.tagArray[type])
+        let tags = this.tagArray[type]
         let tag = new Array(tags[Math.floor(Math.random() * tags.length)], tags[Math.floor(Math.random() * tags.length)])
         let item = this.itemArray[type][Math.floor(Math.random() * this.itemArray[type].length)]
 
-        this.tagPre = tag[0][0]
-        this.tagPost = tag[1][1]
+        this.tagList = [tag[0][0], tag[1][0]]
+        this.tagPre = tag[0][2]
+        this.tagPost = tag[1][3]
         this.item = item[0]
-        this.tooltipsArray['pre'] = tag[0][2]
-        this.tooltipsArray['post'] = tag[1][2]
+        this.tooltipsArray['pre'] = tag[0][1]
+        this.tooltipsArray['post'] = tag[1][1]
         this.tooltipsArray['item'] = item[1]
         this.msg = ""
     },
