@@ -7,7 +7,10 @@ import './assets/scss/app.scss'
 Vue.use(Buefy)
 
 Vue.use(VueAnalytics, {
-  id: 'UA-109246807-2'
+  id: 'UA-109246807-2',
+  debug: {
+    sendHitTask: false
+  }
 })
 
 Vue.config.productionTip = false

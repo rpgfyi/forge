@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container has-text-centered">
         
         <img 
             class="logo" 
@@ -15,6 +15,38 @@
             <b-tooltip :label="tooltipsArray['post']" type="is-light" dashed square multilined>{{tagPost}}</b-tooltip>
     
         </div>
+
+        <b-field position="is-centered">
+
+            <b-taglist>
+                <b-tag type="is-info" icon="tag">
+                    <b-icon
+                        size="is-small"
+                        icon="tag">
+                    </b-icon>
+                    <span>Tag 1</span>
+                </b-tag>
+
+                <b-tag type="is-info" icon="tag">
+                    <b-icon
+                        size="is-small"
+                        icon="tag">
+                    </b-icon>
+                    <span>Tag 2</span>
+                </b-tag>
+
+                <b-tag type="is-info" icon="tag">
+                    <b-icon
+                        size="is-small"
+                        icon="tag">
+                    </b-icon>
+                    <span>Tag 3</span>
+                </b-tag>
+            </b-taglist>
+
+        </b-field>
+
+
 
         <div class="item-selector">
             
@@ -67,33 +99,44 @@ export default {
     }
   },
   mounted() {
-    fetch('forge.json')
+    fetch('forge-new.json')
         .then(r => r.json())
         .then(r => {
-            // populate itemArray
-            this.populateItems('armor', r.forge.armor[0]['items'])
-            this.populateItems('trinket', r.forge.trinket[0]['items'])
-            this.populateItems('weapon', r.forge.weapon[0]['items'])
+            // console.log(r.forge.items)
+            this.populateItems('armor', r.forge.items.armor)
+            this.populateItems('trinket', r.forge.items.trinket)
+            this.populateItems('weapon', r.forge.items.weapon)
 
-            // populate tagArray
-            this.populateTags('universal', r.forge.universal[0]['tags'])
-            this.populateTags('armor', r.forge.armor[0]['tags'])
-            this.populateTags('trinket', r.forge.trinket[0]['tags'])
-            this.populateTags('weapon', r.forge.weapon[0]['tags'])
+            this.tagArray['armor'] = []
+            this.tagArray['trinket'] = []
+            this.tagArray['weapon'] = []
+            this.populateTags(r.forge.tags)
         })
   },
   methods: {
     populateItems (type, source) {
         this.itemArray[type] = []
         for (var x in source) {
-            this.itemArray[type].push([source[x].pre, source[x].desc])
+            this.itemArray[type]
+                .push([
+                    source[x].pre,
+                    source[x].desc
+                ])
         }
         return true;
     },
-    populateTags (type, source) {
-        this.tagArray[type] = []
+    populateTags (source) {
+        
         for (var x in source) {
-            this.tagArray[type].push([source[x].pre, source[x].post, source[x].desc])
+            for (var y in source[x].type) {
+                this.tagArray[source[x].type[y]]
+                    .push([
+                        source[x].name,
+                        source[x].desc,
+                        source[x].pre,
+                        source[x].post
+                    ])
+            }
         }
     },
     generate (type) {

@@ -1,0 +1,747 @@
+{
+	"forge": {
+		"items": {
+			"weapon": [
+				{
+					"pre": "Dagger",
+					"desc": "It's small and sharp. A classic."
+				},
+				{
+					"pre": "Short Sword",
+					"desc": "You can hold it in one hand. Think of the possibilities."
+				},
+				{
+					"pre": "Long Sword",
+					"desc": "You're going to need a second hand for this one."
+				},
+				{
+					"pre": "Axe",
+					"desc": "Cuts down trees, among other things. "
+				},
+				{
+					"pre": "Battle Axe",
+					"desc": "It's like a regular axe, but for battle."
+				},
+				{
+					"pre": "Halberd",
+					"desc": "Spear meets axe, it can do it all."
+				},
+				{
+					"pre": "Staff",
+					"desc": "Let's be honest, it's a stick."
+				},
+				{
+					"pre": "Spear",
+					"desc": "A stick with a sharp thing on the end."
+				},
+				{
+					"pre": "Siege Spear",
+					"desc": "A big spear. No friend to horses."
+				},
+				{
+					"pre": "Mace",
+					"desc": "A blunt weapon with a heavy head on the end of a handle."
+				},
+				{
+					"pre": "Hammer",
+					"desc": "For nails. Also, skulls."
+				},
+				{
+					"pre": "Flail",
+					"desc": "The ol' ball-and-chain. And spikes."
+				},
+				{
+					"pre": "Long Bow",
+					"desc": "A more accurate ranged weapon that packs a punch."
+				},
+				{
+					"pre": "Short Bow",
+					"desc": "A ranged weapon that can be used in tight spaces, and while on the move."
+				},
+				{
+					"pre": "Sling",
+					"desc": "A simple ranged weapon."
+				},
+				{
+					"pre": "Crossbow",
+					"desc": "An easy to use ranged weapon, takes time to reload."
+				},
+				{
+					"pre": "Trident",
+					"desc": "A three-pronged spear."
+				},
+				{
+					"pre": "Kukri",
+					"desc": "A knife with an inwardly curved blade."
+				},
+				{
+					"pre": "Scimitar",
+					"desc": "A curved sword."
+				},
+				{
+					"pre": "Rapier",
+					"desc": "A slender, pointed sword."
+				},
+				{
+					"pre": "Falchion",
+					"desc": "Machete meets sword."
+				},
+				{
+					"pre": "Lance",
+					"desc": "A pole weapon, generally used by mounted soldiers."
+				},
+				{
+					"pre": "Scythe",
+					"desc": "A gardening tool. Also, a murdering tool."
+				},
+				{
+					"pre": "Glaive",
+					"desc": "A polearm, with a single edged blade at the head."
+				},
+				{
+					"pre": "Harpoon",
+					"desc": "A long spear-like weapon generally used in fishing."
+				},
+				{
+					"pre": "Butterfly Sword",
+					"desc": "A small, single-edged sword."
+				},
+				{
+					"pre": "Javelin",
+					"desc": "A light spear, primarily for throwing."
+				}
+			],
+			"armor": [
+				{
+					"pre": "Ring Mail",
+					"desc": "Armor made from metalic rings sewn into a leather or fabric foundation."
+				},
+				{
+					"pre": "Padded Armor",
+					"desc": "A thick defensive jacket."
+				},
+				{
+					"pre": "Leather Armor",
+					"desc": "Made of boiled leather."
+				},
+				{
+					"pre": "Studded Leather Armor",
+					"desc": "Leather armor with metal studs."
+				},
+				{
+					"pre": "Hide Armor",
+					"desc": "Armor made from the hide of an animal."
+				},
+				{
+					"pre": "Scale Mail",
+					"desc": "Consists of a leather base with overlapping pieces of metal."
+				},
+				{
+					"pre": "Chainmail",
+					"desc": "Armor made of small metal rings linked together to form a mesh."
+				},
+				{
+					"pre": "Splint Mail",
+					"desc": "Limb armor where strips of metal are attached to a fabric foundation."
+				},
+				{
+					"pre": "Half-plate",
+					"desc": "A combination of chainmail and metal plates protecting vital areas."
+				},
+				{
+					"pre": "Full Plate",
+					"desc": "Armor made entirely of plate."
+				},
+				{
+					"pre": "Buckler",
+					"desc": "A small, round shield."
+				},
+				{
+					"pre": "Robes",
+					"desc": "Offers very little protection"
+				},
+				{
+					"pre": "Shield",
+					"desc": "Wooden or steel, provides decent protection."
+				},
+				{
+					"pre": "Tower Shield",
+					"desc": "Large, heavy shield. Good at blocking missine fire."
+				}
+			],
+			"trinket": [
+				{
+					"pre": "Amulet",
+					"desc": "Object with magical properties."
+				},
+				{
+					"pre": "Ring",
+					"desc": "Jewelry for your finger."
+				},
+				{
+					"pre": "Necklace",
+					"desc": "Like a pendant."
+				},
+				{
+					"pre": "Medallion",
+					"desc": "Small metal disc with a design on both sides."
+				},
+				{
+					"pre": "Belt",
+					"desc": "Keeps your pants up."
+				},
+				{
+					"pre": "Pendant",
+					"desc": "Like a necklace."
+				},
+				{
+					"pre": "Codex",
+					"desc": "A large book."
+				},
+				{
+					"pre": "Spyglass",
+					"desc": "A handheld telescope."
+				},
+				{
+					"pre": "Mug",
+					"desc": "Cup for drinking."
+				},
+				{
+					"pre": "Gloves",
+					"desc": "They cover your hands."
+				},
+				{
+					"pre": "Lantern",
+					"desc": "A protective enclosure for a light source."
+				},
+				{
+					"pre": "Flask",
+					"desc": "A small liquid container."
+				},
+				{
+					"pre": "Coin",
+					"desc": "A piece of currency from a far away land."
+				},
+				{
+					"pre": "Orb",
+					"desc": "A small globe-like figurine."
+				},
+				{
+					"pre": "Antler",
+					"desc": "The horn from a member of the deer family."
+				},
+				{
+					"pre": "Cloak",
+					"desc": "A loose outer garment."
+				}
+			]
+		},
+		"tags": [
+			{
+				"name": "Accurate",
+				"desc": "Nearly always strikes true.",
+				"pre":  "Accurate",
+				"post": "of Certainty",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Bulky",
+				"desc": "Hard to maneuver with.",
+				"pre":  "Bulky",
+				"post": "of the Bungler",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Concealed",
+				"desc": "Easy to hide, hard to find.",
+				"pre":  "Concealed",
+				"post": "of the Thief",
+				"type": ["trinket","weapon"]
+			},
+			{
+				"name": "Deadly",
+				"desc": "Tends to kill whatever ends up in front of it.",
+				"pre":  "Deadly",
+				"post": "of the Assassin",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Elegant",
+				"desc": "You're going to fight, and look good doing it.",
+				"pre":  "Elegant",
+				"post": "of Elegance",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Erratic",
+				"desc": "There's no way to know what will happen when you use this.",
+				"pre":  "Erratic",
+				"post": "of the Unknown",
+				"type": ["trinket","weapon"]
+			},
+			{
+				"name": "Giant",
+				"desc": "Incredibly large. Requires great strength to use, and takes up more than the normal amount of space.",
+				"pre":  "Giant",
+				"post": "of the Colossus",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Loud",
+				"desc": "Makes a lot of noise for some reason.",
+				"pre":  "Roaring",
+				"post": "of the Chorus",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Military",
+				"desc": "Not available in most markets, may be illegal to own.",
+				"pre":  "Military",
+				"post": "of the Soldier",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Powerful",
+				"desc": "Incredible impact when an attack conencts",
+				"pre":  "Powerful",
+				"post": "of the Tyrant",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Acid",
+				"desc": "Deals or prevents acid damage..",
+				"pre":  "Caustic",
+				"post": "of the Warrior Wasp",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Bludgeoning",
+				"desc": "Deals or prevents bludgeoning damage.",
+				"pre":  "Blunt",
+				"post": "of Bludgeoning",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Cold",
+				"desc": "Deals or prevents cold damage.",
+				"pre":  "Frost",
+				"post": "of the North",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Fire",
+				"desc": "Deals or prevents fire damage.",
+				"pre":  "Dragon's",
+				"post": "of the Dragon",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Force",
+				"desc": "Deals or prevents force damage.",
+				"pre":  "Force",
+				"post": "of Force",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Lightning",
+				"desc": "Deals or prevents lightning damage.",
+				"pre":  "Lightning",
+				"post": "of Lightning",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Necrotic",
+				"desc": "Deals or prevents necrotic damage.",
+				"pre":  "Necrotic",
+				"post": "of the Undead",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Piercing",
+				"desc": "Deals or prevents piercing damage.",
+				"pre":  "Piercing",
+				"post": "of Piercing",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Poison",
+				"desc": "Deals or prevents poison damage.",
+				"pre":  "Venomous",
+				"post": "of the Viper",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Psychic",
+				"desc": "Deals or prevents psychic damage.",
+				"pre":  "Psychic",
+				"post": "of the Mind",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Radiant",
+				"desc": "Deals or prevents radiant damage.",
+				"pre":  "Blessed",
+				"post": "of the Lord",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Slashing",
+				"desc": "Deals or prevents slashing damage.",
+				"pre":  "Slashing",
+				"post": "of Slashing",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Thunder",
+				"desc": "Deals or prevents thunder damage.",
+				"pre":  "Impact",
+				"post": "of Thunder",
+				"type": ["armor","weapon"]
+			},
+			{
+				"name": "Lucky",
+				"desc": "Your luck increases while you have this.",
+				"pre":  "Karmic",
+				"post": "of the Fates",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Infected",
+				"desc": "Those struck by this weapon have a chance of becoming infected.",
+				"pre":  "Infected",
+				"post": "of Pestilence",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Cursed",
+				"desc": "Those struck by this weapon have a chance of becoming cursed.",
+				"pre":  "Cursed",
+				"post": "of Bane",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Imbalanced",
+				"desc": "This weapon's balance makes it hard to connect a strike, but you also become harder to hit.",
+				"pre":  "Imbalanced",
+				"post": "of the Drunkard",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Furious",
+				"desc": "You become enraged while using this.",
+				"pre":  "Barbarian's",
+				"post": "of the Barbarian",
+				"type": ["weapon"]
+			},
+			{
+				"name": "",
+				"desc": "Those struck by this weapon are struck again by a weaker, spectral version of the weapon.",
+				"pre":  "Resonating",
+				"post": "of Echoes",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Soul Bound",
+				"desc": "The souls of those killed by this weapon are trapped inside of it.",
+				"pre":  "Soul Bound",
+				"post": "of Souls",
+				"type": ["weapon"]
+			},
+			{
+				"name": "Swift",
+				"desc": "You move faster than normal.",
+				"pre":  "Swift",
+				"post": "of Speed",
+				"type": ["armor","trinket"]
+			},
+			{
+				"name": "Smoldering",
+				"desc": "Odorless smoke rises from this piece of armor.",
+				"pre":  "Smoldering",
+				"post": "of Ashes",
+				"type": ["armor"]
+			},
+
+			{
+				"name": "Deflecting",
+				"desc": "Ranged missiles will sometimes bounce off of you harmlessly",
+				"pre":  "Deflecting",
+				"post": "of the Monk",
+				"type": ["armor","trinket"]
+			},
+			{
+				"name": "Charming",
+				"desc": "People find you more convicing than you normally are.",
+				"pre":  "Poet's",
+				"post": "of the Bard",
+				"type": ["armor","trinket"]
+			},
+			{
+				"name": "Restoration",
+				"desc": "Once per day, you can use this to heal someone for a small amount of health.",
+				"pre":  "Restorative",
+				"post": "of the Cleric",
+				"type": ["trinket"]
+			},
+			{
+				"name": "Natural",
+				"desc": "Made from unprocessed, natural materials.",
+				"pre":  "Woodland",
+				"post": "of the Druid",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Champion",
+				"desc": "This belonged to a famous champion.",
+				"pre":  "Champion's",
+				"post": "of the Fighter",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Righteous",
+				"desc": "You more easily discern right from wrong.",
+				"pre":  "Righteous",
+				"post": "of the Paladin",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Tracking",
+				"desc": "You are able to follow tracks more easily.",
+				"pre":  "Tracker's",
+				"post": "of the Ranger",
+				"type": ["trinket"]
+			},
+			{
+				"name": "Wild",
+				"desc": "Randomly emits harmless, magical effects.",
+				"pre":  "Wild",
+				"post": "of the Sorcerer",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Seeker",
+				"desc": "You become aware of the location of a powerful, magical tome.",
+				"pre":  "Seeker's",
+				"post": "of the Warlock",
+				"type": ["trinket"]
+			},
+			{
+				"name": "Enchanted",
+				"desc": "Emits a magical aura.",
+				"pre":  "Enchanted",
+				"post": "of the Wizard",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Insightful",
+				"desc": "You gain insight into other's intentions.",
+				"pre":  "Probing",
+				"post": "of the Inquisitor",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Alien",
+				"desc": "An unfamiliar item, may not be able to understand it initially.",
+				"pre":  "Alien",
+				"post": "of the Stranger",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Homemade",
+				"desc": "Not a particularly well made item.",
+				"pre":  "Homemade",
+				"post": "of the Amateur",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Indestructible",
+				"desc": "Can't be destroyed, no matter how hard you try.",
+				"pre":  "Everlasting",
+				"post": "of Durability",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Terrifying",
+				"desc": "Others will tremble in fear when they see this.",
+				"pre":  "Terrifying",
+				"post": "of the Oppressor",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Common",
+				"desc": "There isn't anything exciting or unique about this.",
+				"pre":  "Common",
+				"post": "of the Commoner",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Grotesque",
+				"desc": "The stuff of nightmares.",
+				"pre":  "Grotesque",
+				"post": "of Horrors",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Artisanal",
+				"desc": "Crafted by the most skilled artisans. A truly unique item.",
+				"pre":  "Artisan's",
+				"post": "of the Artisan",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Heavy",
+				"desc": "Much heavier than you would expect it to be.",
+				"pre":  "Heavy",
+				"post": "of Burden",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Huge",
+				"desc": "Takes up a ton of space. Hard to maneuver with.",
+				"pre":  "Huge",
+				"post": "of the Hulk",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Hidden",
+				"desc": "Others will have a hard time spotting this.",
+				"pre":  "Hidden",
+				"post": "of the Night",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Lightweight",
+				"desc": "Easy to lift and stow.",
+				"pre":  "Light",
+				"post": "of the Feather",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Broken",
+				"desc": "This is falling apart.",
+				"pre":  "Ragged",
+				"post": "of the Peasant",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Arcane",
+				"desc": "Radiates with magical energy.",
+				"pre":  "Arcane",
+				"post": "of the Magus",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Rare",
+				"desc": "A truly rare item.",
+				"pre":  "Golden",
+				"post": "of Fortune",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Unreliable",
+				"desc": "Works as expected, except when it doesn't.",
+				"pre":  "Unreliable",
+				"post": "of the Trickster",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Valuable",
+				"desc": "Worth some coin.",
+				"pre":  "Valuable",
+				"post": "of Riches",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Humming",
+				"desc": "Contstantly emits a low buzzing sound.",
+				"pre":  "Humming",
+				"post": "of the Mosquito",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Perception",
+				"desc": "You become more aware of your surroundings.",
+				"pre":  "All-seeing",
+				"post": "of Many Eyes",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Spectral",
+				"desc": "Once per day, this will allow you to pass through a solid object.",
+				"pre":  "Ghost",
+				"post": "of the Forgotten",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Alarm",
+				"desc": "Vibrates when enemies are nearby.",
+				"pre":  "Auspicious",
+				"post": "of the Harbinger",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Stealth",
+				"desc": "You blend into your surroundings more easily.",
+				"pre":  "Shadow",
+				"post": "of Shadows",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Growth",
+				"desc": "Small plants sprout around this if buried in the ground over night.",
+				"pre":  "Burgeoning",
+				"post": "of the Land",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Ancient",
+				"desc": "From a time gone by.",
+				"pre":  "Ancient",
+				"post": "of the Ancients",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Durable",
+				"desc": "Can withstand incredible stress.",
+				"pre":  "Durable",
+				"post": "of Grit",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Holy",
+				"desc": "Emits a radiant aura that strikes fear into unholy abominations.",
+				"pre":  "Blessed",
+				"post": "of Holy Light",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Heroic",
+				"desc": "Belonged to a hero from another age.",
+				"pre":  "Heroic",
+				"post": "of Heroes",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Frail",
+				"desc": "Almost ready to break.",
+				"pre":  "Frail",
+				"post": "of Fragility",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Guardian",
+				"desc": "Emits an aura of protection for nearby friends.",
+				"pre":  "Guardian's",
+				"post": "of the Guardian",
+				"type": ["armor","trinket","weapon"]
+			},
+			{
+				"name": "Abyssal",
+				"desc": "You can only speak Abyssal while using this.",
+				"pre":  "Abyssal",
+				"post": "of the Demon",
+				"type": ["armor","trinket","weapon"]
+			}
+		]
+	}
+}

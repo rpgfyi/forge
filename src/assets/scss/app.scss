@@ -32,8 +32,14 @@ $colors: map-merge($colors, $addColors);
 }
 
 .item-area {
-  margin: 1em 0 ! important;
+  margin: 1em 0 0.5em ! important;
   font-size: 2em;
+}
+
+.tags {
+  justify-content: center ! important;
+  -webkit-box-pack: center ! important;
+  -ms-flex-pack: center ! important;
 }
 
 .spin {
