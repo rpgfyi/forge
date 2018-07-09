@@ -10,9 +10,34 @@
         <div class="item-area">
 
             {{msg}}
-            <b-tooltip :label="tooltipsArray['pre']" type="is-light" dashed square multilined>{{tagPre}}</b-tooltip>&#32;
-            <b-tooltip :label="tooltipsArray['item']" type="is-light" dashed square multilined>{{item}}</b-tooltip>&#32;
-            <b-tooltip :label="tooltipsArray['post']" type="is-light" dashed square multilined>{{tagPost}}</b-tooltip>
+            <b-tooltip v-if="outputArray['quality']" 
+                :label="tooltipsArray['quality']" 
+                type="is-light" 
+                dashed 
+                square 
+                multilined>{{outputArray['quality'][0]}}
+            </b-tooltip>
+            <b-tooltip v-if="outputArray['pre']"
+                :label="tooltipsArray['pre']"
+                type="is-light"
+                dashed
+                square
+                multilined>{{outputArray['pre'][2]}}
+            </b-tooltip>
+            <b-tooltip v-if="outputArray['item']"
+                :label="tooltipsArray['item']"
+                type="is-light"
+                dashed
+                square
+                multilined>{{outputArray['item'][0]}}
+            </b-tooltip>
+            <b-tooltip v-if="outputArray['post']"
+                :label="tooltipsArray['post']"
+                type="is-light"
+                dashed
+                square
+                multilined>{{outputArray['post'][3]}}
+            </b-tooltip>
     
         </div>
 
@@ -30,15 +55,12 @@
 
         </b-field>
 
-
-
-        <div class="item-selector">
+        <div class="field has-addons-center item-selector">
             
             <b-field class="has-addons-centered">
 
                 <b-radio-button v-model="itemType"
                     native-value="weapon">
-                    <i class="ra ra-sword ra-fw"></i>
                     Weapon
                 </b-radio-button>
 
@@ -54,8 +76,33 @@
                     Trinket
                 </b-radio-button>
                 <div class="control">
-                    <span class="button is-link" @click="generate(itemType); gaTrack(itemType)">Generate {{itemType}}</span>
+                    <span class="button is-link" @click="generate(itemType, complexity); gaTrack(itemType)">Generate {{itemType}}</span>
                 </div>
+
+            </b-field>
+
+        </div>
+
+        <div class="field has-addons-center item-selector">
+
+            <b-field class="has-addons-centered">
+
+                <b-radio-button v-model="complexity"
+                    native-value="simple">
+                    Simple
+                </b-radio-button>
+
+                <b-radio-button v-model="complexity"
+                    native-value="default"
+                    >
+                    Default
+                </b-radio-button>
+
+                <b-radio-button v-model="complexity"
+                    native-value="complex"
+                    >
+                    Complex
+                </b-radio-button>
 
             </b-field>
 
@@ -72,14 +119,23 @@ export default {
   data () {
     return {
       itemArray: [],
+      qualityArray: [],
       tagArray: [],
       tagList: [],
       tooltipsArray: [],
+      outputArray: {
+          quality: '',
+          pre: '',
+          item: '',
+          post: ''
+      },
+      quality: null,
       tagPre: null,
       tagPost: null,
       item: null,
       msg: "Generate an item!",
       itemType: "weapon",
+      complexity: "default",
       selected: 1
     }
   },
@@ -95,6 +151,8 @@ export default {
             this.tagArray['trinket'] = []
             this.tagArray['weapon'] = []
             this.populateTags(r.forge.tags)
+
+            this.populateQuality(r.forge.quality)
         })
   },
   methods: {
@@ -123,19 +181,55 @@ export default {
             }
         }
     },
-    generate (type) {
+    populateQuality (source) {
+        for (var x in source) {
+            this.qualityArray.push([source[x].name, source[x].desc])
+        }
+    },
+    generate (type, complexity) {
+        // console.log(this.tagArray)
         let tags = this.tagArray[type]
         let tag = new Array(tags[Math.floor(Math.random() * tags.length)], tags[Math.floor(Math.random() * tags.length)])
         let item = this.itemArray[type][Math.floor(Math.random() * this.itemArray[type].length)]
+        let quality = this.qualityArray[Math.floor(Math.random() * this.qualityArray.length)]
+        let itemObject = {
+            quality: quality,
+            pre: tag[0],
+            item: item,
+            post: tag[1]
+        }
 
-        this.tagList = [tag[0][0], tag[1][0]]
-        this.tagPre = tag[0][2]
-        this.tagPost = tag[1][3]
-        this.item = item[0]
-        this.tooltipsArray['pre'] = tag[0][1]
-        this.tooltipsArray['post'] = tag[1][1]
-        this.tooltipsArray['item'] = item[1]
+        if (complexity === 'simple') {
+            let remove = this.remove(itemObject, 'item')
+            delete itemObject[remove]
+            remove = this.remove(itemObject, 'item')
+            delete itemObject[remove]
+        } else if (complexity === 'default') {
+            let remove = this.remove(itemObject, 'item')
+            delete itemObject[remove]
+        }
+        
+        this.emptyOutputArray()
+        for (var x in itemObject) {
+            this.outputArray[x] = itemObject[x]
+        }
         this.msg = ""
+    },
+    remove (obj, excludeKey) {
+        let rand = null
+        let keys = Object.keys(obj)
+        while(rand === null || rand === excludeKey) {
+            rand = keys[Math.floor(keys.length * Math.random())]
+        }
+        return rand
+    },
+    emptyOutputArray () {
+        this.outputArray = {
+            quality: '',
+            pre: '',
+            item: '',
+            post: ''
+        }
     },
     gaTrack (item) {
         let itemName = item.charAt(0).toUpperCase() + item.slice(1)

@@ -427,14 +427,14 @@
 				"type": ["weapon"]
 			},
 			{
-				"name": "Furious",
+				"name": "Powerful",
 				"desc": "You become enraged while using this.",
 				"pre":  "Barbarian's",
 				"post": "of the Barbarian",
 				"type": ["weapon"]
 			},
 			{
-				"name": "",
+				"name": "Spectral",
 				"desc": "Those struck by this weapon are struck again by a weaker, spectral version of the weapon.",
 				"pre":  "Resonating",
 				"post": "of Echoes",
@@ -448,7 +448,7 @@
 				"type": ["weapon"]
 			},
 			{
-				"name": "Swift",
+				"name": "Fast",
 				"desc": "You move faster than normal.",
 				"pre":  "Swift",
 				"post": "of Speed",
@@ -568,13 +568,6 @@
 				"type": ["armor","trinket","weapon"]
 			},
 			{
-				"name": "Common",
-				"desc": "There isn't anything exciting or unique about this.",
-				"pre":  "Common",
-				"post": "of the Commoner",
-				"type": ["armor","trinket","weapon"]
-			},
-			{
 				"name": "Grotesque",
 				"desc": "The stuff of nightmares.",
 				"pre":  "Grotesque",
@@ -603,7 +596,7 @@
 				"type": ["armor","trinket","weapon"]
 			},
 			{
-				"name": "Hidden",
+				"name": "Stealth",
 				"desc": "Others will have a hard time spotting this.",
 				"pre":  "Hidden",
 				"post": "of the Night",
@@ -617,24 +610,10 @@
 				"type": ["armor","trinket","weapon"]
 			},
 			{
-				"name": "Broken",
-				"desc": "This is falling apart.",
-				"pre":  "Ragged",
-				"post": "of the Peasant",
-				"type": ["armor","trinket","weapon"]
-			},
-			{
 				"name": "Arcane",
 				"desc": "Radiates with magical energy.",
 				"pre":  "Arcane",
 				"post": "of the Magus",
-				"type": ["armor","trinket","weapon"]
-			},
-			{
-				"name": "Rare",
-				"desc": "A truly rare item.",
-				"pre":  "Golden",
-				"post": "of Fortune",
 				"type": ["armor","trinket","weapon"]
 			},
 			{
@@ -652,7 +631,7 @@
 				"type": ["armor","trinket","weapon"]
 			},
 			{
-				"name": "Humming",
+				"name": "Noisy",
 				"desc": "Contstantly emits a low buzzing sound.",
 				"pre":  "Humming",
 				"post": "of the Mosquito",
@@ -694,13 +673,6 @@
 				"type": ["armor","trinket","weapon"]
 			},
 			{
-				"name": "Ancient",
-				"desc": "From a time gone by.",
-				"pre":  "Ancient",
-				"post": "of the Ancients",
-				"type": ["armor","trinket","weapon"]
-			},
-			{
 				"name": "Durable",
 				"desc": "Can withstand incredible stress.",
 				"pre":  "Durable",
@@ -712,13 +684,6 @@
 				"desc": "Emits a radiant aura that strikes fear into unholy abominations.",
 				"pre":  "Blessed",
 				"post": "of Holy Light",
-				"type": ["armor","trinket","weapon"]
-			},
-			{
-				"name": "Heroic",
-				"desc": "Belonged to a hero from another age.",
-				"pre":  "Heroic",
-				"post": "of Heroes",
 				"type": ["armor","trinket","weapon"]
 			},
 			{
@@ -741,6 +706,48 @@
 				"pre":  "Abyssal",
 				"post": "of the Demon",
 				"type": ["armor","trinket","weapon"]
+			}
+		],
+		"quality": [
+			{
+				"name": "Common",
+				"desc": "There isn't anything exciting or unique about this.",
+				"pre" : "Common"
+			},
+			{
+				"name": "Uncommon",
+				"desc": "An item of remark.",
+				"pre" : "Uncommon"
+			},
+			{
+				"name": "Rare",
+				"desc": "A truly incredible item.",
+				"pre" : "Rare"
+			},
+			{
+				"name": "Mythic",
+				"desc": "Worthy of Kings and Queens.",
+				"pre" : "Mythic"
+			},
+			{
+				"name": "Legendary",
+				"desc": "The stuff of legends.",
+				"pre" : "Legendary"
+			},
+			{
+				"name": "Heroic",
+				"desc": "Belonged to a hero from another age.",
+				"pre":  "Heroic"
+			},
+			{
+				"name": "Ancient",
+				"desc": "From a time gone by.",
+				"pre":  "Ancient"
+			},
+			{
+				"name": "Broken",
+				"desc": "This is falling apart.",
+				"pre":  "Ragged"
 			}
 		]
 	}

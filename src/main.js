@@ -9,7 +9,7 @@ Vue.use(Buefy)
 Vue.use(VueAnalytics, {
   id: 'UA-109246807-2',
   debug: {
-    // sendHitTask: false
+    sendHitTask: false
   }
 })
 
