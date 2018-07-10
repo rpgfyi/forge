@@ -71,6 +71,30 @@
         "desc": "This weapon almost never misses."
       },
       {
+        "name": "inaccurate",
+        "desc": "This weapon has a tendency to miss it's mark."
+      },,
+      {
+        "name": "balanced",
+        "desc": ""
+      },
+      {
+        "name": "imbalanced",
+        "desc": ""
+      },
+      {
+        "name": "indestrucible",
+        "desc": "Can't be destroyed, no matter how hard you try."
+      },
+      {
+        "name": "fragile",
+        "desc": "Almost ready to break."
+      },
+      {
+        "name": "",
+        "desc": ""
+      }
+      {
         "name": "concealed",
         "desc": "Easy to hide, hard to find."
       },
@@ -79,8 +103,172 @@
         "desc": "Requires above average strength to move or use."
       },
       {
+        "name": "small",
+        "desc": ""
+      },
+      {
+        "name": "heavy",
+        "desc": ""
+      },
+      {
+        "name": "light",
+        "desc": ""
+      },
+      {
         "name": "loud",
         "desc": "Makes loud noises whenever you use it."
+      },
+      {
+        "name": "quiet",
+        "desc": ""
+      },
+      {
+        "name": "powerful",
+        "desc": ""
+      },
+      {
+        "name": "weak",
+        "desc": ""
+      },
+      {
+        "name": "fast",
+        "desc": ""
+      },
+      {
+        "name": "slow",
+        "desc": ""
+      },
+      {
+        "name": "lucky",
+        "desc": ""
+      },
+      {
+        "name": "unlucky",
+        "desc": ""
+      },
+      {
+        "name": "strength",
+        "desc": ""
+      },
+      {
+        "name": "dexterity",
+        "desc": ""
+      },
+      {
+        "name": "constitution",
+        "desc": ""
+      },
+      {
+        "name": "intelligence",
+        "desc": ""
+      },
+      {
+        "name": "wisdom",
+        "desc": ""
+      },
+      {
+        "name": "charisma",
+        "desc": ""
+      },
+      {
+        "name": "acid",
+        "desc": ""
+      },
+      {
+        "name": "bludgeoning",
+        "desc": ""
+      },
+      {
+        "name": "cold",
+        "desc": ""
+      },
+      {
+        "name": "fire",
+        "desc": ""
+      },
+      {
+        "name": "force",
+        "desc": ""
+      },
+      {
+        "name": "lightning",
+        "desc": ""
+      },
+      {
+        "name": "necrotic",
+        "desc": ""
+      },
+      {
+        "name": "piercing",
+        "desc": ""
+      },
+      {
+        "name": "poison",
+        "desc": ""
+      },
+      {
+        "name": "psychic",
+        "desc": ""
+      },
+      {
+        "name": "radiant",
+        "desc": ""
+      },
+      {
+        "name": "slashing",
+        "desc": ""
+      },
+      {
+        "name": "thunder",
+        "desc": ""
+      },
+      {
+        "name": "infected",
+        "desc": ""
+      },
+      {
+        "name": "cursed",
+        "desc": ""
+      },
+      {
+        "name": "spectral",
+        "desc": ""
+      },
+      {
+        "name": "terrifying",
+        "desc": ""
+      },
+      {
+        "name": "magical",
+        "desc": ""
+      },
+      {
+        "name": "valuable",
+        "desc": ""
+      },
+      {
+        "name": "enchanted",
+        "desc": ""
+      },
+      {
+        "name": "alien",
+        "desc": ""
+      },
+      {
+        "name": "dependable",
+        "desc": ""
+      },
+      {
+        "name": "",
+        "desc": ""
+      },
+      {
+        "name": "",
+        "desc": ""
+      },
+      {
+        "name": "",
+        "desc": ""
       }
     ],
     "descriptors": [
@@ -106,6 +294,174 @@
         "pre": "Roaring",
         "post": "of the Chorus",
         "tags": ["loud"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Bulky",
+        "post": "of the Mammoth",
+        "tags": [""],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Elegant",
+        "post": "of Elegance",
+        "tags": [],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Erratic",
+        "post": "of the Unknown",
+        "tags": [],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Military",
+        "post": "of the Soldier",
+        "tags": [],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Blunt",
+        "post": "of Bludgeoning",
+        "tags": ["bludgeoning"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Frost",
+        "post": "of the North",
+        "tags": ["cold"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Dragon's",
+        "post": "of the Dragon",
+        "tags": ["fire"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of Force",
+        "tags": ["force"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of Lightning",
+        "tags": ["lightning"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of the Undead",
+        "tags": ["necrotic"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "",
+        "tags": ["piercing"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Venomous",
+        "post": "of the Viper",
+        "tags": ["poison"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of the Mind",
+        "tags": ["psychic"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Blessed",
+        "post": "of the Lord",
+        "tags": ["radiant"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "",
+        "tags": ["slashing"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Impact",
+        "post": "of Thunder",
+        "tags": ["thunder"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Karmic",
+        "post": "of the Fates",
+        "tags": ["lucky"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of Pestilence",
+        "tags": ["infected"],
+        "type": ["weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of Bane",
+        "tags": ["cursed"],
+        "type": ["weapon"]
+      },
+      {
+        "pre": "Resonating",
+        "post": "of Echoes",
+        "tags": ["spectral"],
+        "type": ["weapon"]
+      },
+      {
+        "pre": "Swift",
+        "post": "of Speed",
+        "tags": ["fast"],
+        "type": ["armor","trinket"]
+      },
+      {
+        "pre": "Probing",
+        "post": "of the Inquisitor",
+        "tags": ["wisdom"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "of the Stranger",
+        "tags": ["alien"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Everlasting",
+        "post": "of Durability",
+        "tags": ["indestrucible"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Arcane",
+        "post": "of the Magus",
+        "tags": ["magical"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Ghost",
+        "post": "of the Forgotten",
+        "tags": ["spectral"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "Blessed",
+        "post": "of Holy Light",
+        "tags": ["radiant"],
+        "type": ["armor","trinket","weapon"]
+      },
+      {
+        "pre": "",
+        "post": "",
+        "tags": [],
         "type": ["armor","trinket","weapon"]
       }
     ],

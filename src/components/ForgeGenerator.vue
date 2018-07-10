@@ -132,6 +132,7 @@ export default {
         })
         desc = new Array(
             desc[Math.floor(Math.random() * desc.length)],
+            desc[Math.floor(Math.random() * desc.length)],
             desc[Math.floor(Math.random() * desc.length)]
         )
 
@@ -141,31 +142,34 @@ export default {
         item = item[0][1][Math.floor(Math.random() * item[0][1].length)]
 
         let quality = this.qualities[Math.floor(Math.random() * this.qualities.length)]
-    
         let itemObject = {
             quality: quality[1],
             pre: desc[0][1].pre,
             item: item,
             post: desc[1][1].post
         }
-
         if (complexity === 'simple') {
             let remove = this.remove(itemObject, 'item')
             delete itemObject[remove]
             remove = this.remove(itemObject, 'item')
             delete itemObject[remove]
+            desc.splice(desc.indexOf(desc[Math.floor(Math.random() * desc.length)]),1)
+            desc.splice(desc.indexOf(desc[Math.floor(Math.random() * desc.length)]),1)
         } else if (complexity === 'default') {
             let remove = this.remove(itemObject, 'item')
             delete itemObject[remove]
+            desc.splice(desc.indexOf(desc[Math.floor(Math.random() * desc.length)]),1)
         }
 
         let output = ''
         for (var x in itemObject) {
             output += itemObject[x] + " "
         }
-        this.tagList = [desc[0][1].tags[0], desc[1][1].tags[0]]
+        this.tagList = []
+        for (var y in desc) {
+            this.tagList.push(desc[y][1].tags[0])
+        }
         this.output = output.trim()
-        // console.log(this.output)
     },
     remove (obj, excludeKey) {
         let rand = null
