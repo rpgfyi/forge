@@ -73,7 +73,7 @@
       {
         "name": "inaccurate",
         "desc": "This weapon has a tendency to miss it's mark."
-      },,
+      },
       {
         "name": "balanced",
         "desc": ""
@@ -90,10 +90,6 @@
         "name": "fragile",
         "desc": "Almost ready to break."
       },
-      {
-        "name": "",
-        "desc": ""
-      }
       {
         "name": "concealed",
         "desc": "Easy to hide, hard to find."
@@ -256,18 +252,6 @@
       },
       {
         "name": "dependable",
-        "desc": ""
-      },
-      {
-        "name": "",
-        "desc": ""
-      },
-      {
-        "name": "",
-        "desc": ""
-      },
-      {
-        "name": "",
         "desc": ""
       }
     ],
@@ -456,12 +440,6 @@
         "pre": "Blessed",
         "post": "of Holy Light",
         "tags": ["radiant"],
-        "type": ["armor","trinket","weapon"]
-      },
-      {
-        "pre": "",
-        "post": "",
-        "tags": [],
         "type": ["armor","trinket","weapon"]
       }
     ],
