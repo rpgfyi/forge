@@ -17,10 +17,11 @@
 
             <b-taglist>
                 <b-tag type="is-info" icon="tag" v-for="item in tagList">
-                    <b-icon
+                    <!--<b-icon
                         size="is-small"
                         icon="tag">
-                    </b-icon>
+                    </b-icon>-->
+                    <span class="icon-price-tag"></span>
                     <span>{{item | capitalize}}</span>
                 </b-tag>
             </b-taglist>

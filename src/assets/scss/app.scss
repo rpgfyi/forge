@@ -4,6 +4,12 @@
 //    variables in _variables.scss
 @import ".variables";
 
+@import "../css/icomoon";
+
+.icon-price-tag:before {
+  content: "\e935";
+}
+
 // 2. Setup your Custom Colors
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
