@@ -4,11 +4,7 @@
 //    variables in _variables.scss
 @import ".variables";
 
-@import "../css/icomoon";
-
-.icon-price-tag:before {
-  content: "\e935";
-}
+@import "../css/style";
 
 // 2. Setup your Custom Colors
 $linkedin: #0077b5;

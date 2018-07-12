@@ -17,12 +17,11 @@
 
             <b-taglist>
                 <b-tag type="is-info" icon="tag" v-for="item in tagList">
-                    <!--<b-icon
-                        size="is-small"
-                        icon="tag">
-                    </b-icon>-->
-                    <span class="icon-price-tag"></span>
-                    <span>{{item | capitalize}}</span>
+                    <b-tooltip :label="item[1]"
+                    type="is-light">
+                        <span class="icon icon-price-tag is-small"></span>
+                        <span>{{item[0] | capitalize}}</span>
+                    </b-tooltip>
                 </b-tag>
             </b-taglist>
 
@@ -49,7 +48,7 @@
                     Trinket
                 </b-radio-button>
                 <div class="control">
-                    <span class="button is-link" @click="generate(itemType, complexity); gaTrack(itemType)">Generate {{itemType}}</span>
+                    <span class="button is-link" @click="generate(itemType, rarity); gaTrack(itemType)">Generate {{itemType}}</span>
                 </div>
 
             </b-field>
@@ -60,21 +59,26 @@
 
             <b-field class="has-addons-centered">
 
-                <b-radio-button v-model="complexity"
-                    native-value="simple">
-                    Simple
+                <b-radio-button v-model="rarity"
+                    native-value=0>
+                    Common
                 </b-radio-button>
 
-                <b-radio-button v-model="complexity"
-                    native-value="default"
+                <b-radio-button v-model="rarity"
+                    native-value="1"
                     >
-                    Default
+                    Uncommon
                 </b-radio-button>
 
-                <b-radio-button v-model="complexity"
-                    native-value="complex"
+                <b-radio-button v-model="rarity"
+                    native-value="2"
                     >
-                    Complex
+                    Rare
+                </b-radio-button>
+
+                <b-radio-button v-model="rarity"
+                    native-value="3">
+                    Legendary
                 </b-radio-button>
 
             </b-field>
@@ -93,12 +97,11 @@ export default {
     return {
       items: [],
       tags: [],
-      qualities: [],
       descriptors: [],
       tagList: [],
       output: "Generate an item!",
       itemType: "weapon",
-      complexity: "default",
+      rarity: "2",
       selected: 1
     }
   },
@@ -106,9 +109,10 @@ export default {
     fetch('forge-final.json')
         .then(r => r.json())
         .then(r => {
-            this.qualities = this.populateObject(r.forge.quality)
             this.descriptors = this.populateObject(r.forge.descriptors)
-            this.items = this.populateObject(r.forge.items)
+            this.items['armor'] = this.populateObject(r.forge.items.armor)
+            this.items['trinket'] = this.populateObject(r.forge.items.trinket)
+            this.items['weapon'] = this.populateObject(r.forge.items.weapon)
             this.tags = this.populateObject(r.forge.tags)
         })
   },
@@ -120,56 +124,62 @@ export default {
       }
   },
   methods: {
+    containsAll (needles, haystack) {
+        let final = []
+        for (let x in haystack) {
+            if (needles.indexOf(haystack[x].name) > -1) {
+                final.push([haystack[x].name, haystack[x].desc])
+            }
+        }
+        return final
+    },
     populateObject (source) {
         let itemArray = []
         for (var x in source) {
-            itemArray.push([x, source[x]])
+            itemArray.push(source[x])
         }
         return itemArray
     },
-    generate (type, complexity) {
+    generate (type, rarity) {
         let desc = this.descriptors.filter(obj => {
-            return obj[1].type.includes(type)
+            return (obj.type.includes(type) && obj.rare <= parseInt(rarity))
         })
         desc = new Array(
+            desc[Math.floor(Math.random() * desc.length)],
             desc[Math.floor(Math.random() * desc.length)],
             desc[Math.floor(Math.random() * desc.length)],
             desc[Math.floor(Math.random() * desc.length)]
         )
 
-        let item = this.items.filter(obj => {
-            return obj.includes(type)
-        })
-        item = item[0][1][Math.floor(Math.random() * item[0][1].length)]
+        let item = this.items[type]
+        
+        item = item[Math.floor(Math.random() * item.length)]
 
-        let quality = this.qualities[Math.floor(Math.random() * this.qualities.length)]
         let itemObject = {
-            quality: quality[1],
-            pre: desc[0][1].pre,
-            item: item,
-            post: desc[1][1].post
+            pre: desc[1].pre,
+            item: item.name,
+            post: desc[1].post
         }
-        if (complexity === 'simple') {
+
+        let tagList = []
+        for (var step = 0; step <= rarity; step++) {
+            let freeTags = desc[step].tags
+            tagList.push(freeTags[Math.floor(Math.random() * freeTags.length)])
+        }
+        this.tagList = this.containsAll(tagList, this.tags)
+
+        if (rarity <= '1') {
             let remove = this.remove(itemObject, 'item')
             delete itemObject[remove]
-            remove = this.remove(itemObject, 'item')
-            delete itemObject[remove]
-            desc.splice(desc.indexOf(desc[Math.floor(Math.random() * desc.length)]),1)
-            desc.splice(desc.indexOf(desc[Math.floor(Math.random() * desc.length)]),1)
-        } else if (complexity === 'default') {
-            let remove = this.remove(itemObject, 'item')
-            delete itemObject[remove]
             desc.splice(desc.indexOf(desc[Math.floor(Math.random() * desc.length)]),1)
         }
+        // another else if for "badges"
 
         let output = ''
         for (var x in itemObject) {
             output += itemObject[x] + " "
         }
-        this.tagList = []
-        for (var y in desc) {
-            this.tagList.push(desc[y][1].tags[0])
-        }
+        
         this.output = output.trim()
     },
     remove (obj, excludeKey) {
