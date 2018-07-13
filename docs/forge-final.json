@@ -1,0 +1,576 @@
+{
+  "forge": {
+    "items": {
+      "weapon": [
+        {
+          "name": "Dagger"
+        },
+        {
+          "name": "Short Sword"
+        },
+        {
+          "name": "Long Sword"
+        },
+        {
+            "name": "Axe"
+        },
+        {
+          "name": "Battle Axe"
+        },
+        {
+          "name": "Halberd"
+        },
+        {
+          "name": "Staff"
+        },
+        {
+          "name": "Spear"
+        },
+        {
+          "name": "Siege Spear"
+        },
+        {
+          "name": "Mace"
+        },
+        {
+          "name": "Hammer"
+        },
+        {
+          "name": "Flail"
+        },
+        {
+          "name": "Long Bow"
+        },
+        {
+          "name": "Short Bow"
+        },
+        {
+          "name": "Sling"
+        },
+        {
+          "name": "Crossbow"
+        },
+        {
+          "name": "Trident"
+        },
+        {
+          "name": "Kukri"
+        },
+        {
+          "name": "Scimitar"
+        },
+        {
+          "name": "Rapier"
+        },
+        {
+          "name": "Falchion"
+        },
+        {
+          "name": "Lance"
+        },
+        {
+          "name": "Scythe"
+        },
+        {
+          "name": "Glaive"
+        },
+        {
+          "name": "Harpoon"
+        },
+        {
+          "name": "Butterfly Sword"
+        },
+        {
+          "name": "Javelin"
+        }
+      ],
+      "armor": [
+        {
+          "name": "Ring Mail"
+        },
+        {
+          "name": "Padded Armor"
+        },
+        {
+          "name": "Leather Armor"
+        },
+        {
+          "name": "Studded Leather Armor"
+        },
+        {
+          "name": "Hide Armor"
+        },
+        {
+          "name": "Scale Mail"
+        },
+        {
+          "name": "Chainmail"
+        },
+        {
+          "name": "Splint Mail"
+        },
+        {
+          "name": "Half-plate"
+        },
+        {
+          "name": "Full Plate"
+        },
+        {
+          "name": "Buckler"
+        },
+        {
+          "name": "Robes"
+        },
+        {
+          "name": "Shield"
+        },
+        {
+          "name": "Tower Shield"
+        }
+      ],
+      "trinket": [
+        {
+          "name": "Amulet"
+        },
+        {
+          "name": "Ring"
+        },
+        {
+          "name": "Necklace"
+        },
+        {
+          "name": "Medallion"
+        },
+        {
+          "name": "Belt"
+        },
+        {
+          "name": "Pendant"
+        },
+        {
+          "name": "Codex"
+        },
+        {
+          "name": "Spyglass"
+        },
+        {
+          "name": "Mug"
+        },
+        {
+          "name": "Gloves"
+        },
+        {
+          "name": "Lantern"
+        },
+        {
+          "name": "Flask"
+        },
+        {
+          "name": "Coin"
+        },
+        {
+          "name": "Orb"
+        },
+        {
+          "name": "Antler"
+        },
+        {
+          "name": "Cloak"
+        }
+      ]
+    },
+    "tags": [
+      {
+        "name": "accurate",
+        "desc": "This weapon almost never misses."
+      },
+      {
+        "name": "inaccurate",
+        "desc": "This weapon has a tendency to miss it's mark."
+      },
+      {
+        "name": "indestrucible",
+        "desc": "Can't be destroyed, no matter how hard you try."
+      },
+      {
+        "name": "fragile",
+        "desc": "Almost ready to break."
+      },
+      {
+        "name": "concealed",
+        "desc": "Easy to hide, hard to find."
+      },
+      {
+        "name": "large",
+        "desc": "Requires above average strength to move or use."
+      },
+      {
+        "name": "small",
+        "desc": "Can be lifted or moved very easily."
+      },
+      {
+        "name": "heavy",
+        "desc": "Weighs a lot."
+      },
+      {
+        "name": "light",
+        "desc": "Weighs very little."
+      },
+      {
+        "name": "loud",
+        "desc": "Makes loud noises when used."
+      },
+      {
+        "name": "quiet",
+        "desc": "Makes almost no noise when used."
+      },
+      {
+        "name": "powerful",
+        "desc": "Deals an extra die of damage."
+      },
+      {
+        "name": "weak",
+        "desc": "Deals half damage."
+      },
+      {
+        "name": "fast",
+        "desc": "On a successful critical hit, make another attack."
+      },
+      {
+        "name": "slow",
+        "desc": "On a critical failure, your turn ends."
+      },
+      {
+        "name": "lucky",
+        "desc": "Your critical hit range increases by 1."
+      },
+      {
+        "name": "strength",
+        "desc": "Increases your strength."
+      },
+      {
+        "name": "dexterity",
+        "desc": "Increases your dexterity."
+      },
+      {
+        "name": "constitution",
+        "desc": "Increases your constitution."
+      },
+      {
+        "name": "intelligence",
+        "desc": "Increases your intelligence."
+      },
+      {
+        "name": "wisdom",
+        "desc": "Increases your wisdom."
+      },
+      {
+        "name": "charisma",
+        "desc": "Increases your charisma."
+      },
+      {
+        "name": "acid",
+        "desc": "Deals or prevents  damage."
+      },
+      {
+        "name": "bludgeoning",
+        "desc": "Deals or prevents bludgeoning damage."
+      },
+      {
+        "name": "cold",
+        "desc": "Deals or prevents cold damage."
+      },
+      {
+        "name": "fire",
+        "desc": "Deals or prevents fire damage."
+      },
+      {
+        "name": "force",
+        "desc": "Deals or prevents force damage."
+      },
+      {
+        "name": "lightning",
+        "desc": "Deals or prevents lightning damage."
+      },
+      {
+        "name": "necrotic",
+        "desc": "Deals or prevents necrotic damage."
+      },
+      {
+        "name": "piercing",
+        "desc": "Deals or prevents piercing damage."
+      },
+      {
+        "name": "poison",
+        "desc": "Deals or prevents poison damage."
+      },
+      {
+        "name": "psychic",
+        "desc": "Deals or prevents psychic damage."
+      },
+      {
+        "name": "radiant",
+        "desc": "Deals or prevents radiant damage."
+      },
+      {
+        "name": "slashing",
+        "desc": "Deals or prevents slashing damage."
+      },
+      {
+        "name": "thunder",
+        "desc": "Deals or prevents thunder damage."
+      },
+      {
+        "name": "infected",
+        "desc": "On hit, has a chance to infect your target."
+      },
+      {
+        "name": "cursed",
+        "desc": "On hit, has a chance to curse your target."
+      },
+      {
+        "name": "spectral",
+        "desc": "Ghost-like in some way."
+      },
+      {
+        "name": "terrifying",
+        "desc": "Strikes fear into those who see it."
+      },
+      {
+        "name": "magical",
+        "desc": "Radiates magical energy."
+      },
+      {
+        "name": "valuable",
+        "desc": "Worth more than a comparable item."
+      },
+      {
+        "name": "alien",
+        "desc": "Very strange, not something you've ever seen before."
+      },
+      {
+        "name": "wild",
+        "desc": "You never know what will happen when you use this."
+      }
+    ],
+    "descriptors": [
+      {
+        "pre": "Accurate",
+        "post": "of Certainty",
+        "tags": ["accurate"],
+        "type": ["weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Concealed",
+        "post": "of the Thief",
+        "tags": ["concealed"],
+        "type": ["trinket", "weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Giant",
+        "post": "of the Colossus",
+        "tags": ["large","heavy","slow"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Roaring",
+        "post": "of the Chorus",
+        "tags": ["loud"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Bulky",
+        "post": "of the Mammoth",
+        "tags": ["large","heavy","slow"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Elegant",
+        "post": "of Elegance",
+        "tags": ["light","fast"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Erratic",
+        "post": "of the Unknown",
+        "tags": ["alien","wild"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Military",
+        "post": "of the Soldier",
+        "tags": ["valuable"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Blunt",
+        "post": "of Bludgeoning",
+        "tags": ["bludgeoning"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Frost",
+        "post": "of the North",
+        "tags": ["cold"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Dragon's",
+        "post": "of the Dragon",
+        "tags": ["fire"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Violent",
+        "post": "of Force",
+        "tags": ["force"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Lightning",
+        "post": "of Lightning",
+        "tags": ["lightning"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Undead",
+        "post": "of the Undead",
+        "tags": ["spectral","necrotic"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Piercing",
+        "post": "of Piercing",
+        "tags": ["piercing"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Venomous",
+        "post": "of the Viper",
+        "tags": ["poison"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Mystical",
+        "post": "of the Mind",
+        "tags": ["psychic"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Blessed",
+        "post": "of the Lord",
+        "tags": ["radiant"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Rending",
+        "post": "of Rending",
+        "tags": ["slashing"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Impact",
+        "post": "of Thunder",
+        "tags": ["thunder"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Karmic",
+        "post": "of the Fates",
+        "tags": ["lucky"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Tormenting",
+        "post": "of Pestilence",
+        "tags": ["infected"],
+        "type": ["weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Calamitous",
+        "post": "of Bane",
+        "tags": ["cursed"],
+        "type": ["weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Resonating",
+        "post": "of Echoes",
+        "tags": ["spectral"],
+        "type": ["weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Swift",
+        "post": "of Speed",
+        "tags": ["fast"],
+        "type": ["armor","trinket"],
+        "rare": "1"
+      },
+      {
+        "pre": "Probing",
+        "post": "of the Inquisitor",
+        "tags": ["wisdom"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Exotic",
+        "post": "of the Stranger",
+        "tags": ["alien", "valuable"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "0"
+      },
+      {
+        "pre": "Everlasting",
+        "post": "of Durability",
+        "tags": ["indestrucible"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Arcane",
+        "post": "of the Magus",
+        "tags": ["magical"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "1"
+      },
+      {
+        "pre": "Ghost",
+        "post": "of the Forgotten",
+        "tags": ["spectral"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "2"
+      },
+      {
+        "pre": "Blessed",
+        "post": "of Holy Light",
+        "tags": ["radiant"],
+        "type": ["armor","trinket","weapon"],
+        "rare": "2"
+      }
+    ]
+  }
+}
