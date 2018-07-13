@@ -110,10 +110,10 @@ export default {
         .then(r => r.json())
         .then(r => {
             this.descriptors = this.populateObject(r.forge.descriptors)
+            this.tags = this.populateObject(r.forge.tags)
             this.items['armor'] = this.populateObject(r.forge.items.armor)
             this.items['trinket'] = this.populateObject(r.forge.items.trinket)
             this.items['weapon'] = this.populateObject(r.forge.items.weapon)
-            this.tags = this.populateObject(r.forge.tags)
         })
   },
   filters: {
@@ -156,7 +156,7 @@ export default {
         item = item[Math.floor(Math.random() * item.length)]
 
         let itemObject = {
-            pre: desc[1].pre,
+            pre: desc[0].pre,
             item: item.name,
             post: desc[1].post
         }
