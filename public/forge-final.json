@@ -189,14 +189,6 @@
         "desc": "This weapon has a tendency to miss it's mark."
       },
       {
-        "name": "balanced",
-        "desc": ""
-      },
-      {
-        "name": "imbalanced",
-        "desc": ""
-      },
-      {
         "name": "indestrucible",
         "desc": "Can't be destroyed, no matter how hard you try."
       },
@@ -214,159 +206,151 @@
       },
       {
         "name": "small",
-        "desc": ""
+        "desc": "Can be lifted or moved very easily."
       },
       {
         "name": "heavy",
-        "desc": ""
+        "desc": "Weighs a lot."
       },
       {
         "name": "light",
-        "desc": ""
+        "desc": "Weighs very little."
       },
       {
         "name": "loud",
-        "desc": "Makes loud noises whenever you use it."
+        "desc": "Makes loud noises when used."
       },
       {
         "name": "quiet",
-        "desc": ""
+        "desc": "Makes almost no noise when used."
       },
       {
         "name": "powerful",
-        "desc": ""
+        "desc": "Deals an extra die of damage."
       },
       {
         "name": "weak",
-        "desc": "test"
+        "desc": "Deals half damage."
       },
       {
         "name": "fast",
-        "desc": "test"
+        "desc": "On a successful critical hit, make another attack."
       },
       {
         "name": "slow",
-        "desc": "test"
+        "desc": "On a critical failure, your turn ends."
       },
       {
         "name": "lucky",
-        "desc": "test"
-      },
-      {
-        "name": "unlucky",
-        "desc": "test"
+        "desc": "Your critical hit range increases by 1."
       },
       {
         "name": "strength",
-        "desc": "test"
+        "desc": "Increases your strength."
       },
       {
         "name": "dexterity",
-        "desc": "test"
+        "desc": "Increases your dexterity."
       },
       {
         "name": "constitution",
-        "desc": "test"
+        "desc": "Increases your constitution."
       },
       {
         "name": "intelligence",
-        "desc": "test"
+        "desc": "Increases your intelligence."
       },
       {
         "name": "wisdom",
-        "desc": "test"
+        "desc": "Increases your wisdom."
       },
       {
         "name": "charisma",
-        "desc": "test"
+        "desc": "Increases your charisma."
       },
       {
         "name": "acid",
-        "desc": "test"
+        "desc": "Deals or prevents  damage."
       },
       {
         "name": "bludgeoning",
-        "desc": "test"
+        "desc": "Deals or prevents bludgeoning damage."
       },
       {
         "name": "cold",
-        "desc": ""
+        "desc": "Deals or prevents cold damage."
       },
       {
         "name": "fire",
-        "desc": ""
+        "desc": "Deals or prevents fire damage."
       },
       {
         "name": "force",
-        "desc": ""
+        "desc": "Deals or prevents force damage."
       },
       {
         "name": "lightning",
-        "desc": ""
+        "desc": "Deals or prevents lightning damage."
       },
       {
         "name": "necrotic",
-        "desc": ""
+        "desc": "Deals or prevents necrotic damage."
       },
       {
         "name": "piercing",
-        "desc": ""
+        "desc": "Deals or prevents piercing damage."
       },
       {
         "name": "poison",
-        "desc": ""
+        "desc": "Deals or prevents poison damage."
       },
       {
         "name": "psychic",
-        "desc": ""
+        "desc": "Deals or prevents psychic damage."
       },
       {
         "name": "radiant",
-        "desc": ""
+        "desc": "Deals or prevents radiant damage."
       },
       {
         "name": "slashing",
-        "desc": ""
+        "desc": "Deals or prevents slashing damage."
       },
       {
         "name": "thunder",
-        "desc": ""
+        "desc": "Deals or prevents thunder damage."
       },
       {
         "name": "infected",
-        "desc": ""
+        "desc": "On hit, has a chance to infect your target."
       },
       {
         "name": "cursed",
-        "desc": ""
+        "desc": "On hit, has a chance to curse your target."
       },
       {
         "name": "spectral",
-        "desc": ""
+        "desc": "Ghost-like in some way."
       },
       {
         "name": "terrifying",
-        "desc": ""
+        "desc": "Strikes fear into those who see it."
       },
       {
         "name": "magical",
-        "desc": ""
+        "desc": "Radiates magical energy."
       },
       {
         "name": "valuable",
-        "desc": ""
-      },
-      {
-        "name": "enchanted",
-        "desc": ""
+        "desc": "Worth more than a comparable item."
       },
       {
         "name": "alien",
-        "desc": ""
+        "desc": "Very strange, not something you've ever seen before."
       },
       {
-        "name": "dependable",
-        "desc": ""
+        "name": "wild",
+        "desc": "You never know what will happen when you use this."
       }
     ],
     "descriptors": [
@@ -387,7 +371,7 @@
       {
         "pre": "Giant",
         "post": "of the Colossus",
-        "tags": ["large"],
+        "tags": ["large","heavy","slow"],
         "type": ["armor","trinket","weapon"],
         "rare": "0"
       },
@@ -401,28 +385,28 @@
       {
         "pre": "Bulky",
         "post": "of the Mammoth",
-        "tags": [""],
+        "tags": ["large","heavy","slow"],
         "type": ["armor","trinket","weapon"],
         "rare": "0"
       },
       {
         "pre": "Elegant",
         "post": "of Elegance",
-        "tags": [],
+        "tags": ["light","fast"],
         "type": ["armor","trinket","weapon"],
         "rare": "0"
       },
       {
         "pre": "Erratic",
         "post": "of the Unknown",
-        "tags": [],
+        "tags": ["alien","wild"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
       },
       {
         "pre": "Military",
         "post": "of the Soldier",
-        "tags": [],
+        "tags": ["valuable"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
       },
@@ -448,29 +432,29 @@
         "rare": "1"
       },
       {
-        "pre": "",
+        "pre": "Violent",
         "post": "of Force",
         "tags": ["force"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
       },
       {
-        "pre": "",
+        "pre": "Lightning",
         "post": "of Lightning",
         "tags": ["lightning"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
       },
       {
-        "pre": "",
+        "pre": "Undead",
         "post": "of the Undead",
-        "tags": ["necrotic"],
+        "tags": ["spectral","necrotic"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
       },
       {
-        "pre": "",
-        "post": "",
+        "pre": "Piercing",
+        "post": "of Piercing",
         "tags": ["piercing"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
@@ -483,7 +467,7 @@
         "rare": "1"
       },
       {
-        "pre": "",
+        "pre": "Mystical",
         "post": "of the Mind",
         "tags": ["psychic"],
         "type": ["armor","trinket","weapon"],
@@ -497,8 +481,8 @@
         "rare": "1"
       },
       {
-        "pre": "",
-        "post": "",
+        "pre": "Rending",
+        "post": "of Rending",
         "tags": ["slashing"],
         "type": ["armor","trinket","weapon"],
         "rare": "1"
@@ -518,14 +502,14 @@
         "rare": "2"
       },
       {
-        "pre": "",
+        "pre": "Tormenting",
         "post": "of Pestilence",
         "tags": ["infected"],
         "type": ["weapon"],
         "rare": "2"
       },
       {
-        "pre": "",
+        "pre": "Calamitous",
         "post": "of Bane",
         "tags": ["cursed"],
         "type": ["weapon"],
@@ -553,7 +537,7 @@
         "rare": "2"
       },
       {
-        "pre": "",
+        "pre": "Exotic",
         "post": "of the Stranger",
         "tags": ["alien", "valuable"],
         "type": ["armor","trinket","weapon"],
